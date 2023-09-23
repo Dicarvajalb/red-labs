@@ -8,10 +8,23 @@ export const metadata = {
   description: 'red labs site',
 }
 
-export default function RootLayout({ children }) {
+import TransitionComponent from '../../transition/TransitionComponent';
+import { TransitionProvider } from '../../context/TransitionProvider';
+import Link from 'next/link';
+
+const Layout = ({ children }) => {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es">
+      <TransitionProvider>
+        <body className={inter.className}>
+          <Link href={"/galery"}>gelery</Link>
+          <Link href={"/"}>home</Link>
+          <TransitionComponent>{children}</TransitionComponent>
+        </body>
+      </TransitionProvider>
     </html>
-  )
-}
+    
+  );
+};
+
+export default Layout;
