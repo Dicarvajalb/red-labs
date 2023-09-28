@@ -22,6 +22,7 @@ export default function Home(props) {
   console.log("[params]" , params.get("forward") == 1)
   const handleBack = () =>{
     moveMarker().reverse()
+    timeline.duration(timeline.totalDuration())
     timeline.reverse()
     
     
