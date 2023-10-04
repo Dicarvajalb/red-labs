@@ -1,7 +1,7 @@
 import Map from "./Map";
 import Menu from "./Menu";
 
-export default function GlobalLayout({PrevButton}) {
+export default function GlobalLayout({PrevButton,children}) {
  
   return (
     <main className="flex min-h-screen w-full h-full flex-col items-center justify-between relative bg-gray">
@@ -12,6 +12,7 @@ export default function GlobalLayout({PrevButton}) {
       <div className='w-3/5 h-full bg-[#504558] map_container relative'>
       {PrevButton}
         <Map/>
+        {children}
       </div>
       
     </div>

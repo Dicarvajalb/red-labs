@@ -2,7 +2,7 @@
 import { gsap } from 'gsap'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { useIsomorphicLayoutEffect } from '../../../helpers/isomorphicEffect'
+import { useIsomorphicLayoutEffect } from '../../../../helpers/isomorphicEffect'
 import GlobalLayout from '@/Components/GlobalLayout'
 import PreviusPageButton from '@/Components/PreviusPageButton'
 import UbicationBtn from '@/Components/UbicationBtn'
@@ -52,6 +52,7 @@ export default function Home(props) {
       tMoveMarker.add(gsap.set("."+photo.className, {left: photo.left(targetPos, selfPos), duration: 1}),0)
       tMoveMarker.add(gsap.to("."+photo.className, {scale:1, duration: 1}), 0)
     })
+    tMoveMarker.duration(0)
     //btns
 
     return tMoveMarker
@@ -89,7 +90,7 @@ export default function Home(props) {
     if(params.get("forward") == 0){
       tMap.duration(0)
     }
-    
+    tMap.duration(0)
     tMap.play()
     setTimeline(tMap)
   }
