@@ -8,7 +8,8 @@ import Map from '@/Components/Map'
 import { createPortal } from 'react-dom'
 
 export function initialState(){
-
+  console.log(document.getElementsByClassName("amazonia_svg")[0])
+  gsap.set(".amazonia_svg", {x: 0})
 }
 
 export function initialAnim(){

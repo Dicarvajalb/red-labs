@@ -51,6 +51,7 @@ export function initialAnim(params, router){
   tMap.add(gsap.to(".amazonia_svg", {scale:3,  transformOrigin:"150% 125%", zIndex:10, duration: 1}),0)
   
   tMap.add(gsap.to(".map_container", {width:"100%", duration: 1}), 0)
+  tMap.add(gsap.to(".links_container", {width:"0%", duration: 1}), 0)
   tMap.add(gsap.to(".button_back", {display:"unset", duration: 0}), 0)
   tMap.add(gsap.to([".map_svg>:not(.amazonia_svg)"], {position:"absolute", scale:0, duration: 0.5}), 0)
 

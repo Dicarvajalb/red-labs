@@ -239,7 +239,7 @@ const Layout = ({ children }) => {
         <div id="pestania-accesibilidad" className="">Panel de Accesibilidad</div>
     </div>
 
-    <main style={{height: "100vh"}}id="content__container">
+    <main style={{height: "fit-content"}}id="content__container">
         {/* <!-- <iframe src="http://localhost:3000/unalab" width="100%" style="height: 100%;"></iframe> --> */}
         {children}
     </main>

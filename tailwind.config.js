@@ -28,7 +28,7 @@ module.exports = {
         ligthAlt2: "#DDD0A9",
         ligthAlt3: "#C0A95E",
         darkPurple: "#23152E",
-        lightPurple: "#dark_alt2",
+        lightPurple: "#504558",
         
       }
     },
