@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <>
     {console.log("ehm", process.env.rawJsFromFile)}
-      <GlobalLayout title={"Viaje hacia la construcción de entornos pacíficos y autónomos"} subtitle={"subtitle"}/>
+      <GlobalLayout title={"Viaje hacia la construcción de entornos pacíficos y autónomos"}></GlobalLayout>
       <BtnAmazonia/>
       <BtnLaPaz/> 
     </>
