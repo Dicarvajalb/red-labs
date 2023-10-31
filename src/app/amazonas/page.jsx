@@ -6,6 +6,8 @@ import { useIsomorphicLayoutEffect } from '../../../helpers/isomorphicEffect'
 import GlobalLayout from '@/Components/GlobalLayout'
 import PreviusPageButton from '@/Components/PreviusPageButton'
 import UbicationBtn from '@/Components/UbicationBtn'
+import BtnExternal from '@/Components/BtnExternal'
+import BtnInternal from '@/Components/BtnInternal'
 
 export function initialState(){
 
@@ -40,21 +42,20 @@ export function initialAnim(params, router){
   
   tMap.add(gsap.to(".container__description", {width:"50rem", duration: 1}),0)
 
-  
+  tMap.add(gsap.to(".links_container", {width:"0%", duration: 1}), 0)
 
-  tMap.add(gsap.set(".amazonia_svg", {fill:"#2baa92", duration: 1}), 0)
-  tMap.add(gsap.to(".amazonia_svg", {scale:3, zIndex:10, duration: 1}),0)
+
   tMap.add(gsap.to(".amazonia_svg", {transformOrigin:"70% 120%", duration: 1}),0)
 
+  tMap.add(gsap.to(".amazonia_svg", {scale:3, zIndex:10, duration: 1}),0)
 
- 
   
-  
-  tMap.add(gsap.to(".links_container", {width:"0%", duration: 1}), 0)
   tMap.add(gsap.to(".button_back", {display:"unset", duration: 0}), 0)
-tMap.add(gsap.to([".map_svg>:not(.amazonia_svg)"], {position:"absolute", scale:0, duration: 0.5}), 0)
+  tMap.add(gsap.to([".map_svg>:not(.amazonia_svg)"], {position:"absolute", scale:0, duration: 0.5}), 0)
 
   tMap.add(gsap.to(".button_amazonia", {display:"absolute", top:"-100px", duration: 0}), 0)
+  tMap.add(gsap.to(".button_amazonia", {display:"absolute", top:"-100px", duration: 0}), 0)
+
   
   tMap.add(() => moveMarker(), "+=0")
 
@@ -88,7 +89,7 @@ export default function Home(props) {
     
   }
 
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     
     const tMap = initialAnim(params, router)
     tMap.play()
@@ -98,10 +99,25 @@ export default function Home(props) {
 
   return (
     <>
-    <GlobalLayout PrevButton={<PreviusPageButton handleBack={handleBack}/>}>
-      <div className='container__description'>
-        gi
-      </div>
+    <GlobalLayout title={"Amazonía"} subtitle={"Viaje hacia la construcción de entornos pacíficos y autónomos"} PrevButton={<PreviusPageButton handleBack={handleBack}/>}>
+      <div className={"container__description w-[0rem] max-w-[100vw] overflow-hidden flex flex-col justify-center items-center h-full " + 
+                      ""}>
+        <div className={"w-[100%] " + "lg:w-[50%]"}>
+        <p className='text-white text-2xl mb-10'>
+          <b>
+          Seguridad y soberanía alimentaria 
+          </b><br></br>
+          Exposición virtual sobre soberanía alimentaria: Descubriendo la importancia de garantizar el derecho de las comunidades a producir, acceder y controlar sus propios alimentos de forma sostenible e inclusiva."
+          Estudio Soberanía alimentaria Sede Amazonía
+          Galería
+        </p>
+          <BtnInternal href={"/amazonas/galeria"}
+           className={"w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple "+
+                                  "lg:w-[15rem"}>
+            Accede al visualizador de imágenes
+          </BtnInternal>
+        </div>
+        </div>
     </GlobalLayout>
     
     </>

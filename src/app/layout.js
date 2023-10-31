@@ -42,16 +42,16 @@ const Layout = ({ children }) => {
     <meta name="robots" content="all"/>
 
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/accesibilidad.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/unal.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/base.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/tablet.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/phone.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/small.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/printer.css" media="print"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/accesibilidad.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/unal.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/base.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/tablet.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/phone.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/small.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/printer.css" media="print"/>
 
 
     {/* <script src="js/jquery.js" type="text/javascript"></script>
@@ -74,19 +74,19 @@ const Layout = ({ children }) => {
         <div className="indicator hidden-xs"></div>
         <ul className="dropdown-menu">
             <li>
-                <a href="http://correo.unal.edu.co" target="_blank"><img src="images/icnServEmail.png" width="32" height="32" alt="Correo Electrónico"/>Correo Electrónico</a>
+                <a href="http://correo.unal.edu.co" target="_blank"><img src="/images/icnServEmail.png" width="32" height="32" alt="Correo Electrónico"/>Correo Electrónico</a>
             </li>
             <li>
-                <a href="https://dninfoa.unal.edu.co" target="_blank"><img src="images/icnServSia.png" width="32" height="32" alt="Dirección Nacional de Información Académica"/>DNINFOA - SIA</a>
+                <a href="https://dninfoa.unal.edu.co" target="_blank"><img src="/images/icnServSia.png" width="32" height="32" alt="Dirección Nacional de Información Académica"/>DNINFOA - SIA</a>
             </li>
             <li>
-                <a href="http://bibliotecas.unal.edu.co" target="_blank"><img src="images/icnServLibrary.png" width="32" height="32" alt="Biblioteca"/>Bibliotecas</a>
+                <a href="http://bibliotecas.unal.edu.co" target="_blank"><img src="/images/icnServLibrary.png" width="32" height="32" alt="Biblioteca"/>Bibliotecas</a>
             </li>
             <li>
-                <a href="http://personal.unal.edu.co" target="_blank"><img src="images/icnServCall.png" width="32" height="32" alt="Convocatorias"/>Convocatorias</a>
+                <a href="http://personal.unal.edu.co" target="_blank"><img src="/images/icnServCall.png" width="32" height="32" alt="Convocatorias"/>Convocatorias</a>
             </li>
             <li>
-                <a href="http://identidad.unal.edu.co"><img src="images/icnServIdentidad.png" width="32" height="32" alt="Identidad U.N."/>Identidad U.N.</a>
+                <a href="http://identidad.unal.edu.co"><img src="/images/icnServIdentidad.png" width="32" height="32" alt="Identidad U.N."/>Identidad U.N.</a>
             </li>
         </ul>
     </div>
@@ -102,14 +102,14 @@ const Layout = ({ children }) => {
                 <!--[if lt IE 9]>
 			<img src="images/escudoUnal.png" width="93%" height="auto" className="hidden-print"/> 
 	  <![endif]--> */}
-    <img src="images/escudoUnal.png" width="93%" height="auto" className="hidden-print"/> 
+    <img src="/images/escudoUnal.png" width="93%" height="auto" className="hidden-print"/> 
                 <img src="images/escudoUnal_black.png" className="visible-print" />
             </a>
         </div>
         <div className="seal">
-            <img className="hidden-print" alt="Escudo de la República de Colombia" src="images/sealColombia.png" width="66" height="66" />
+            <img className="hidden-print" alt="Escudo de la República de Colombia" src="/images/sealColombia.png" width="66" height="66" />
 
-            <img className="visible-print" alt="Escudo de la República de Colombia" src="images/sealColombia_black.png" width="66" height="66" />
+            <img className="visible-print" alt="Escudo de la República de Colombia" src="/images/sealColombia_black.png" width="66" height="66" />
         </div>
         <div className="firstMenu">
 
@@ -150,7 +150,7 @@ const Layout = ({ children }) => {
                 </nav>
             </div>
         </div>
-        <div id="bs-navbar" className="navbar-collapse collapse navigation">
+        <div id="bs-navbar" style={{backgroundColor: "blue"}} className="navbar-collapse collapse navigation">
             <div className="site-url">
                 {/* <!-- <a href="http://transformaciondigital.unal.edu.co/">transformaciondigital.unal.edu.co</a> -->
                 <!-- <div classNameName="btn-group">
@@ -239,8 +239,8 @@ const Layout = ({ children }) => {
         <div id="pestania-accesibilidad" className="">Panel de Accesibilidad</div>
     </div>
 
-    <main style={{height: "fit-content"}}id="content__container">
-        {/* <!-- <iframe src="http://localhost:3000/unalab" width="100%" style="height: 100%;"></iframe> --> */}
+    <main style={{height: "fit-content", overflowX: "hidden"}}id="content__container">
+        {/* <!-- <iframe src="/http://localhost:3000/unalab" width="100%" style="height: 100%;"></iframe> --> */}
         {children}
     </main>
 
@@ -283,29 +283,29 @@ const Layout = ({ children }) => {
         <div className="col-md-2 col-lg-2 col-sm-2 col-xs-12 logos ">
             <div className="col-xs-6 col-sm-12 col-md-6 no-padding ">
                 <a className="col-xs-6 col-sm-12 " href="http://www.orgulloun.unal.edu.co ">
-                    <img className="hidden-print " alt="Orgullo UN " src="images/log_orgullo.png " width="78 " height="21 " />
-                    <img className="visible-print " alt="Orgullo UN " src="images/log_orgullo_black.png " width="94 " height="37 " />
+                    <img className="hidden-print " alt="Orgullo UN " src="/images/log_orgullo.png " width="78 " height="21 " />
+                    <img className="visible-print " alt="Orgullo UN " src="/images/log_orgullo_black.png " width="94 " height="37 " />
                 </a>
 
                 <a className="col-xs-6 col-sm-12 imgAgencia " href="http://www.agenciadenoticias.unal.edu.co/inicio.html ">
-                    <img className="hidden-print " alt="Agencia de noticias " src="images/log_agenc.png " width="94 " height="25 " />
-                    <img className="visible-print " alt="Agencia de noticias " src="images/log_agenc_black.png " width="94 " height="37 " />
+                    <img className="hidden-print " alt="Agencia de noticias " src="/images/log_agenc.png " width="94 " height="25 " />
+                    <img className="visible-print " alt="Agencia de noticias " src="/images/log_agenc_black.png " width="94 " height="37 " />
                 </a>
             </div>
             <div className="col-xs-6 col-sm-12 col-md-6 no-padding ">
                 <a className="col-xs-6 col-sm-12 " href="https://www.sivirtual.gov.co/memoficha-entidad/-/entidad/T0356 ">
-                    <img alt="Trámites en línea " src="images/log_gobiern.png " width="67 " height="51 " />
+                    <img alt="Trámites en línea " src="/images/log_gobiern.png " width="67 " height="51 " />
                 </a>
 
                 <a className="col-xs-6 col-sm-12 " href="http://www.contaduria.gov.co/ ">
-                    <img alt="Contaduría general de la republica " src="images/log_contra.png " width="67 " height="51 " />
+                    <img alt="Contaduría general de la republica " src="/images/log_contra.png " width="67 " height="51 " />
                 </a>
             </div>
 
         </div>
     </footer>
     
-    <script onLoad={(e) => setLoaded(true)}  src="js/accesibilidad.js" type="text/javascript" ></script>
+    <script onLoad={(e) => setLoaded(true)}  src="/js/accesibilidad.js" type="text/javascript" ></script>
 </body>
 
 </html>

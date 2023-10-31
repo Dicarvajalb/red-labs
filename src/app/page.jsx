@@ -17,24 +17,23 @@ export function moveMarker(){
 
   var tMoveMarker = gsap.timeline()
 
-  tMoveMarker.add(gsap.to(".btn__amazonia", {scale:0, duration: 0}), 0)
   tMoveMarker.add(gsap.to(".btn__amazonia", {transformOrigin:"100% 50%", duration: 0}), 0)
   tMoveMarker.add(gsap.to(".btn__amazonia", {top: targetPos.top + window.scrollY - selfPos.height + targetPos.height/3, duration: 0}), 0)
   tMoveMarker.add(gsap.to(".btn__amazonia", {left: targetPos.left - selfPos.width/2 + targetPos.width/2, duration: 0}),0)
-  tMoveMarker.add(gsap.to(".btn__amazonia", {scale:1, duration: 1}), 0)
 
   var targetPos = document.getElementsByClassName("cesar_svg")[0].getClientRects()[0]
 
-  tMoveMarker.add(gsap.to(".btn__lapaz", {scale:0, duration: 0}), 0)
   tMoveMarker.add(gsap.to(".btn__lapaz", {transformOrigin:"100% 50%", duration: 0}), 0)
   tMoveMarker.add(gsap.to(".btn__lapaz", {top: targetPos.top + window.scrollY - selfPos.height + targetPos.height/3, duration: 0}), 0)
   tMoveMarker.add(gsap.to(".btn__lapaz", {left: targetPos.left - selfPos.width/2 + targetPos.width/2, duration: 0}),0)
-  tMoveMarker.add(gsap.to(".btn__lapaz", {scale:1, duration: 1}), 0)
 
   return tMoveMarker
 }
 export function initialState(){
   moveMarker()
+  gsap.set([".btn__amazonia", ".btn__lapaz",], {scale:0, duration: 0})
+  gsap.to(".btn__lapaz", {scale:1, duration: 1})
+  gsap.to(".btn__amazonia", {scale:1, duration: 1})
   gsap.set(".amazonia_svg", {x: 0})
 }
 
@@ -63,6 +62,7 @@ export default function Home() {
   },[ref])
   
   useIsomorphicLayoutEffect(() => {
+    window.addEventListener("resize", moveMarker)
       initialState()
       initialAnim()
 

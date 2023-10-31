@@ -5,10 +5,9 @@ import { useEffect, useState } from 'react'
 import { useIsomorphicLayoutEffect } from '../../../../helpers/isomorphicEffect'
 import GlobalLayout from '@/Components/GlobalLayout'
 import PreviusPageButton from '@/Components/PreviusPageButton'
-import UbicationBtn from '@/Components/UbicationBtn'
-import { galeryData } from '@/staticData/galery'
 import { initialAnim as initialPrevAnim, moveMarker } from '@/app/amazonas/page'
-import Photograph from '@/Components/Photograph'
+import BtnExternal from '@/Components/BtnExternal'
+import Galery from '@/Components/Galery'
 
 export function initialState(params, router){
   const tMap = initialPrevAnim(params, router)
@@ -16,16 +15,9 @@ export function initialState(params, router){
   tMap.play()
 }
 
-export function onResize (){
-  var pos = document.getElementsByClassName("amazonas_svg")[0]?.getClientRects()[0]
-  var pos2 = document.getElementsByClassName(galeryData[0].className)[0]?.getClientRects()[0]
-  console.log("[marcador] resize", pos)
-  gsap.to(".button_amazonia", {top:pos?.top + pos?.height/2 - pos2?.height, duration: 1})
-  gsap.to(".button_amazonia", {left:pos?.left + pos?.width/2 - pos2?.width/2, duration: 1})
-}
+
 
 export function initialAnim(params, router){
-  window.addEventListener("resize", onResize)
 
   
 
@@ -33,11 +25,20 @@ export function initialAnim(params, router){
     paused: true,
     onReverseComplete: () => router.push("/amazonas?forward=0"),
   })
+
+  tMap.add(gsap.to(".svg__map", {opacity:0, duration: 0.5}),0)
+  tMap.add(gsap.to(".svg__map", {width:0, height: 0, display: "none", duration: 0}),"+=0")
+  tMap.add(gsap.to(".container__description", {opacity:0, duration: 0.5}),0)
+  tMap.add(gsap.to(".container__description", {width:0, height: 0, display: "none", duration: 0}),"+=0")
+  tMap.add(gsap.to(".container__title", {opacity:0, duration: 0.5}),0)
+  tMap.add(gsap.to(".container__title", {width:0, height: 0, display: "none", duration: 0}),"+=0")
+
+  tMap.add(gsap.to(".container__galery", {width:0, height: 0, duration: 0}),0)
+  tMap.add(gsap.to(".container__galery", {width:"100%", height: "70rem",  duration: 0}),0)
+  tMap.add(gsap.to(".container__galery", {opacity:1, duration: 1}),0)
+
+  tMap.add(gsap.to(".container__map", {padding:0, duration: 1}),0)
   
-  tMap.add(gsap.to(".amazonia_svg", {scale:5,  transformOrigin:"150% 100%", zIndex:10, duration: 1}),0)
-  
-  //tMap.add(gsap.to(".map_container", {width:"100%", duration: 1}), 0)
-  tMap.add(() => moveMarker(), "+=0")
 
   if(params.get("forward") == 0){
     tMap.duration(0)
@@ -75,18 +76,33 @@ export default function Home(props) {
     
     tMap.play()
     setTimeline(tMap)
+    
 
   }, [])
 
   return (
     <>
-    <GlobalLayout PrevButton={<PreviusPageButton handleBack={handleBack}/>} children={<Photograph/>}/>
-    {
-      galeryData.map(photo =>
-        <UbicationBtn url={photo.url} className={photo.className}/>
-      )
-    }
-    
+    <GlobalLayout title={"Amazonía"} subtitle={"Viaje hacia la construcción de entornos pacíficos y autónomos"} PrevButton={<PreviusPageButton handleBack={handleBack}/>}>
+      <div className={"container__description w-[0rem] max-w-[100vw] overflow-hidden flex flex-col justify-center items-center h-full " + 
+                      ""}>
+        <div className={"w-[100%] " + "lg:w-[50%]"}>
+        <p className='text-white text-2xl mb-10'>
+          <b>
+          Seguridad y soberanía alimentaria 
+          </b><br></br>
+          Exposición virtual sobre soberanía alimentaria: Descubriendo la importancia de garantizar el derecho de las comunidades a producir, acceder y controlar sus propios alimentos de forma sostenible e inclusiva."
+          Estudio Soberanía alimentaria Sede Amazonía
+          Galería
+        </p>
+          <BtnExternal className={"w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple "+
+                                  "lg:w-[15rem"}>
+            Accede al visualizador de imágenes
+          </BtnExternal>
+        </div>
+        
+      </div>
+      <Galery/>
+    </GlobalLayout>
     </>
   )
 }
