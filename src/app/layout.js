@@ -7,10 +7,6 @@ import { useEffect, useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Red labs',
-  description: 'red labs site',
-}
 const Layout = ({ children }) => {
 
   const [Loaded, setLoaded] = useState(false)
