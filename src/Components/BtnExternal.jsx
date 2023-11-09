@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function BtnExternal({href, className, children, leftIcon, sede, rightIcon}) {
   const router = useRouter()
   return (
-      <a className={"flex flex-row items-center justify-between w-[100%] h-fit bg-lightPurple py-2 px-4 text-lg text-light hover:text-white rounded-2xl cursor-pointer"
+      <a className={"z-10 flex flex-row items-center justify-between w-[100%] h-fit py-2 px-4 text-sm lg:text-lg rounded-2xl cursor-pointer"
       +" "+className} 
       target="_blank"
       href={href}>

@@ -5,13 +5,12 @@ import { useEffect, useState } from 'react'
 import { useIsomorphicLayoutEffect } from '../../../helpers/isomorphicEffect'
 import GlobalLayout from '@/Components/GlobalLayout'
 import PreviusPageButton from '@/Components/PreviusPageButton'
-import UbicationBtn from '@/Components/UbicationBtn'
+import Image from 'next/image'
 import BtnIcons from '@/Components/BtnIcons'
 
 export function initialState(){
 
 }
-
 
 export function initialAnim(params, router){
 
@@ -21,7 +20,6 @@ export function initialAnim(params, router){
     paused: true,
     onReverseComplete: () => router.push("/"),
   })
-  
   
   //containers
   tMap.add(gsap.set(".container__map", {width:"#100%", duration: 1}), 0)
@@ -35,12 +33,13 @@ export function initialAnim(params, router){
   tMap.add(gsap.to(".links_container", {width:"0%", duration: 1}), 0)
 
 
-  tMap.add(gsap.to(".amazonia_svg", {transformOrigin:"70% 120%", duration: 1}),0)
+  tMap.add(gsap.to(".cesar_svg", {transformOrigin:"70% 10%", duration: 1}),0)
 
-  tMap.add(gsap.to(".amazonia_svg", {scale:3, zIndex:10, duration: 1}),0)
+  tMap.add(gsap.to(".cesar_svg", {scale:4,strokeWidth: "1px",  zIndex:10, duration: 1}),0)
+
   
   tMap.add(gsap.to(".button_back", {display:"unset", duration: 0}), 0)
-  tMap.add(gsap.to([".map_svg>:not(.amazonia_svg)"], {position:"absolute", scale:0, duration: 0.5}), 0)
+  tMap.add(gsap.to([".map_svg>:not(.cesar_svg)"], {position:"absolute", scale:0, duration: 0.5}), 0)
 
   tMap.add(gsap.to(".button_amazonia", {display:"absolute", top:"-100px", duration: 0}), 0)
   tMap.add(gsap.to(".button_amazonia", {display:"absolute", top:"-100px", duration: 0}), 0)
@@ -87,23 +86,34 @@ export default function Home(props) {
 
   return (
     <>
-    <GlobalLayout title={"Amazonía"} subtitle={"Viaje hacia la construcción de entornos pacíficos y autónomos"} PrevButton={<PreviusPageButton handleBack={handleBack}/>}>
+    <GlobalLayout title={"La Paz"} subtitle={"Viaje hacia la construcción de entornos pacíficos y autónomos"} PrevButton={<PreviusPageButton handleBack={handleBack}/>}>
       <div className={"container__description w-[0rem] max-w-[100vw] overflow-hidden flex flex-col justify-center items-center h-full " + 
                       ""}>
-        <div className={"w-[100%] " + "lg:w-[50%]"}>
+        <div className={"w-[100%] flex flex-col gap-[2rem] " + "lg:w-[50%]"}>
+        <div className='flex flex-row justify-end items-center'>
+        <Image className='w-[0] sm:w-[100px] me-[-80px] z-10' width={"100"} height={"100"} src={"/icons/3dpath.svg"}/>
+        <BtnIcons 
+        leftIcon={"/icons/3dpath.svg"}
+        classLeft={"h-auto sm:h-[0] "}
+        rightIcon={"/svg/play.svg"}
+          href={""}
+          className={"w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple  gap-4 "+
+                     "lg:w-[100%]"}>
+          {"Inicia el recorrido 3D"}
+        </BtnIcons>
+        </div>
         <p className='text-white text-2xl mb-10'>
           <b>
-          Seguridad y soberanía alimentaria 
+          Conflictos ambientales, territoriales y migratorios
+
           </b><br></br>
-          Exposición virtual sobre soberanía alimentaria: Descubriendo la importancia de garantizar el derecho de las comunidades a producir, acceder y controlar sus propios alimentos de forma sostenible e inclusiva."
-          Estudio Soberanía alimentaria Sede Amazonía
-          Galería
+Exposición virtual sobre paz territorial: Explorando caminos hacia la convivencia sostenible en regiones afectadas por conflictos.
         </p>
-          <BtnIcons onClick={() => router.push("/amazonas/galeria")}
-          rightIcon={"/icons/arrowRight.svg"}
-           className={"w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple "+
-                                  "lg:w-[15rem"}>
-            Accede al visualizador de imágenes
+          <BtnIcons 
+          rightIcon={"/svg/externalFilled.svg"}
+           className={"w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple self-end "+
+                      "lg:w-[15rem]"}>
+            Aprende más
           </BtnIcons>
         </div>
         </div>

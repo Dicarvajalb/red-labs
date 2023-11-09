@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { useIsomorphicLayoutEffect } from '../../../../helpers/isomorphicEffect'
 import GlobalLayout from '@/Components/GlobalLayout'
 import PreviusPageButton from '@/Components/PreviusPageButton'
-import { initialAnim as initialPrevAnim, moveMarker } from '@/app/amazonas/page'
+import { initialAnim as initialPrevAnim } from '@/app/amazonas/page'
 import BtnExternal from '@/Components/BtnExternal'
 import Galery from '@/Components/Galery'
 
@@ -34,7 +34,7 @@ export function initialAnim(params, router){
   tMap.add(gsap.to(".container__title", {width:0, height: 0, display: "none", duration: 0}),"+=0")
 
   tMap.add(gsap.to(".container__galery", {width:0, height: 0, duration: 0}),0)
-  tMap.add(gsap.to(".container__galery", {width:"100%", height: "70rem",  duration: 0}),0)
+  tMap.add(gsap.to(".container__galery", {width:"100%", height: "auto",  duration: 0}),0)
   tMap.add(gsap.to(".container__galery", {opacity:1, duration: 1}),0)
 
   tMap.add(gsap.to(".container__map", {padding:0, duration: 1}),0)
