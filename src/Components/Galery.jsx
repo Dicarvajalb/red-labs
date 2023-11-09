@@ -22,13 +22,13 @@ export default function Galery() {
     <div className={"container__galery flex flex-nowrap flex-col-reverse items-center justify-start w-[0] h-[0] opacity-0 " +
     " lg:w-[0] lg:flex-row"}>
       <div className='text-white bg-lightPurple w-fit lg:w-[30%] text-2xl flex flex-col justify-start items-center'>
-        <div className="w-[70%] mt-[10rem]">
+        <div className="w-[70%] mt-[2rem] lg:mt-[10rem]">
         {galeryData[selected].description}
         </div>
       </div>
       <div style={{backgroundImage: `url(${galeryData[selected].imgUrl})`}} className={
                     "bg-cover bg-center bg-no-repeat text-white bg-lightPurple w-[100vw] h-[40rem] text-2xl d relative"+
-                    ' text-white bg-lightPurple lg:w-[70%] lg:h-[100%] text-2xl relative'}>
+                    ' text-white bg-lightPurple lg:w-[70%] lg:h-[70rem] text-2xl relative'}>
 
         <div className="container__points flex flex-row absolute left-[50%] translate-x-[-50%] bottom-0">
           {

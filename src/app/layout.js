@@ -1,5 +1,7 @@
 "use client"
 import Script from 'next/script';
+import localFont from 'next/font/local'
+
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head';
@@ -232,10 +234,9 @@ const Layout = ({ children }) => {
             </div>
         </div>
         {/* <!-- /content wrapper for padding --> */}
-        <div id="pestania-accesibilidad" className="">Panel de Accesibilidad</div>
     </div>
 
-    <main style={{height: "fit-content", overflowX: "hidden"}}id="content__container">
+    <main  style={{height: "fit-content", overflowX: "hidden"}}id="content__container">
         {/* <!-- <iframe src="/http://localhost:3000/unalab" width="100%" style="height: 100%;"></iframe> --> */}
         {children}
     </main>
@@ -301,7 +302,8 @@ const Layout = ({ children }) => {
         </div>
     </footer>
     
-    <script onLoad={(e) => setLoaded(true)}  src="/js/accesibilidad.js" type="text/javascript" ></script>
+    {//<script onLoad={(e) => setLoaded(true)}  src="/js/accesibilidad.js" type="text/javascript" ></script>
+    }
 </body>
 
 </html>

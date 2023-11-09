@@ -30,7 +30,8 @@ module.exports = {
         darkPurple: "#23152E",
         lightPurple: "#504558",
         
-      }
+      },
+    
     },
   },
   plugins: ["tailwindcss ,autoprefixer"], 
