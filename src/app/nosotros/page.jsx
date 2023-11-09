@@ -94,7 +94,7 @@ export default function Home(props) {
   return (
     <>
     <div className="overflow-hidden flex w-[100vw] h-full flex-col items-center relative">
-    <div className='w-[100%] h-[5vh] bg-light menu_container'>
+    <div className='w-[100%] h-fit bg-light menu_container shadow-lg'>
       <Menu/>
     </div>
     <div className="relative flex flex-col items-center justify-center w-full  h-fit  bg-lightPurple text-white

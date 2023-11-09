@@ -11,7 +11,7 @@ export default function GlobalLayout({PrevButton,children , title, subtitle}) {
  
   return (
     <div className="flex min-h-screen overflow-hidden w-[100vw] h-full flex-col items-center relative bg-gray">
-    <div className='w-[100%] h-fit bg-light menu_container'>
+    <div className='w-[100%] h-fit bg-light menu_container '>
       <Menu/>
     </div>
     <div className="flex w-full  h-fit flex-col bg-lightPurple gap-10 

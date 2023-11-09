@@ -8,8 +8,8 @@ export default function Menu() {
 
   return (
     <div className="flex flex-row h-[3rem]">
-      <div className="grow flex  flex-row items-center justify-center gap-4">
-      <Image src={"/icons/rltp.svg"} width={"30"} height={"30"}></Image>
+      <div className="grow flex flex-row items-center lg:justify-end justify-center gap-4">
+        <Image src={"/icons/rltp.svg"} width={"30"} height={"30"}></Image>
         <h3 className="text-3xl text-lightPurple">RLTP</h3>
       </div>
       <div className="flex-col  gap-4 w-[0]  lg:w-[auto] lg:grow-[2] overflow-hidden flex lg:flex-row items-center justify-around">
