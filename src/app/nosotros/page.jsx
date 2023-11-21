@@ -99,9 +99,9 @@ export default function Home(props) {
     </div>
     <div className="relative flex flex-col items-center justify-center w-full  h-fit  bg-lightPurple text-white
                      ">
-      <div className="z-10 flex flex-col items-center w-full gap-[2rem] mt-[2rem]  h-fit text-white
+      <div className="z-10 flex flex-col px-[1rem] items-center w-full gap-[2rem] mt-[2rem]  h-fit text-white
                       lg:w-[50%]">
-        <h1 >Alianza por la innovación pedagógica con uso de tecnologías para la paz</h1>
+        <h1 className='text-4xl font-bold' >Alianza por la innovación pedagógica con uso de tecnologías para la paz</h1>
         <div className={`text-xl font-normal h-fit`}>
         <p>
         La «Alianza por la innovación pedagógica con uso de tecnologías para la paz» es beneficiaria de la “Convocatoria para la conformación o el fortalecimiento de estrategias de cooperación entre laboratorios 2022-2024”, organizada por la Dirección Nacional de Investigación y Laboratorios de la Vicerrectoría de Investigación de la Universidad Nacional de Colombia. Convocatoria que tiene por objetivo apoyar el desarrollo de proyectos que busquen potenciar el Sistema Nacional de Laboratorios (SNL) a través de la conformación o fortalecimiento de estrategias de cooperación entre laboratorios de diferentes sedes, facultades o institutos.</p>
@@ -123,7 +123,7 @@ export default function Home(props) {
 
         <div>
           <div className='flex gap-[2rem] flex-row flex-wrap h-fit mb-[2rem] justify-start'>
-            <div className='flex gap-[2rem] flex-col w-[40%] grow'>
+            <div className='flex gap-[2rem] flex-col w-[100%] md:w-[40%] grow'>
             <Note className={""}>
               <b>Sede Bogotá</b>
               <ul className='marker:text-lightPurple list-disc'>
@@ -143,7 +143,7 @@ export default function Home(props) {
 
             </Note>
             </div>
-            <div className='flex gap-[2rem] flex-col w-[50%]'>
+            <div className='flex gap-[2rem] flex-col w-[100%] md:w-[50%] '>
             <Note className={"basis-1/3 "}>
               <b>Sede Amazonía</b>
               <ul className='marker:text-lightPurple list-disc'>
@@ -176,8 +176,8 @@ export default function Home(props) {
           </div>
         </div>
       </div>
-      <Image className='absolute left-0 top-0 opacity-20 lg:opacity-100 z-0' src={"/svg/leftDecoration.svg"} width={500} height={100}/>
-      <Image className='absolute right-0 top-0 opacity-20 lg:opacity-100 z-0' src={"/svg/rightDecoration.svg"} width={350} height={100}/>
+      <Image alt='decoración izquierda' className='absolute left-0 top-0 opacity-20 lg:opacity-100 z-0' src={"/svg/leftDecoration.svg"} width={500} height={100}/>
+      <Image alt='decoración derecha' className='absolute right-0 top-0 opacity-20 lg:opacity-100 z-0' src={"/svg/rightDecoration.svg"} width={350} height={100}/>
     </div>
     
     </div>

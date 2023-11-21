@@ -18,7 +18,7 @@ export default function GlobalLayout({PrevButton,children , title, subtitle}) {
                     lg:flex-row lg:bg-white lg:items-start lg:gap-0">
       <div className='w-full h-fit  bg-lightPurple container__map relative flex flex-col justify-start items-center
                       lg:w-8/12 lg:items-start lg:min-h-[100vh] lg:max-h-fit lg:pe-[4rem]'>
-        <div className='container__title w-full h-[fit] max-h-[5rem] m-[2rem]  section_title flex flex-col justify-end items-start'>
+        <div className='container__title w-full h-[fit] ms-[1rem] lg:m-[2rem]  section_title flex flex-col justify-end items-start'>
           <h1 className="text-white text-2xl">{subtitle || ""}</h1>
           <h3 className="z-10 text-white text-xl lg:text-4xl font-bold">{title || "titulo"}</h3>
           
@@ -30,34 +30,31 @@ export default function GlobalLayout({PrevButton,children , title, subtitle}) {
         <Map2/>
 
         <div className='w-[0px] h-[0px] lg:ms-10 lg:w-[20rem] overflow-hidden lg:h-fit conatiner__buttons flex absolute bottom-[5rem] left-0 flex-col justify-end items-start gap-4 z-20'>
-          {
-          
-          !PrevButton
-
-          &&
+         
           <>
           <BtnExternal rightIcon={"/svg/externalFilled.svg"} className={"bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple"}>Aprende sobre Metodología de proyectos y Design Thinking</BtnExternal>
 
           <BtnExternal rightIcon={"/svg/externalFilled.svg"} className={"bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple"}>Aprende sobre los Índices de Madurez Digital</BtnExternal>
-          </>}
+          </>
         </div>
         <div className='w-fit'>
           {children}
         </div>
         
         </div>
-        
+        <div className="w-full px-[1rem] mt-[2rem] lg:m-0">
         {PrevButton}
+        </div>
       </div>
       <Links/>
         
        <div className='w-full mb-[10rem]  lg:w-[0px] bg-lightPurple overflow-hidden h-fit max-h-[5%] conatiner__buttons flex flex-col justify-end items-center border-4'>
-       {!PrevButton && 
+       
           <div className="w-[90%]">
           <BtnExternal rightIcon={"/svg/externalFilled.svg"} className={"bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple mb-[1rem]"}>Aprende sobre Metodología de proyectos y Design Thinking</BtnExternal>
 
           <BtnExternal rightIcon={"/svg/externalFilled.svg"} className={"bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple"}>Aprende sobre los Índices de Madurez Digital</BtnExternal>
-          </div>}
+          </div>
 
         </div>
     </div>
