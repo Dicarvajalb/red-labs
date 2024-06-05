@@ -1,0 +1,27 @@
+name: Build and Deploy in branch
+
+on:
+  push:
+    branches:
+      - dev-2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm i
+
+    - name: Build
+      run: npm run build
+
+    - name: Deploy to deploy branch
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: deploy
