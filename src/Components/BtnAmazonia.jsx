@@ -17,7 +17,7 @@ export default function BtnAmazonia({url, className}) {
         <b> Amazonía</b>
         </p>
       </div>
-      <Image className="w-[100%] h-[100%] relative" width={400} height={400} src={"/svg/amazoniaBtn.svg"}/>
+      <Image alt="icono de ubicación de amazonia" className="w-[100%] h-[100%] relative" width={400} height={400} src={"/svg/amazoniaBtn.svg"}/>
       
     </div>
   )
