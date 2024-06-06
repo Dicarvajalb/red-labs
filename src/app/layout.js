@@ -466,11 +466,11 @@ const Layout = ({ children }) => {
             <a href="http://correo.unal.edu.co " target="_top ">
               Correo institucional
             </a>
-            <a href="index.html# ">Mapa del sitio</a>
+            <a>Mapa del sitio</a>
             <a href="http://redessociales.unal.edu.co " target="_top ">
               Redes Sociales
             </a>
-            <a href="index.html# ">FAQ</a>
+            <a>FAQ</a>
             <a href="http://unal.edu.co/quejas-y-reclamos/ " target="_self ">
               Quejas y reclamos
             </a>
@@ -480,11 +480,11 @@ const Layout = ({ children }) => {
             <a href="http://unal.edu.co/encuesta/ " target="_self ">
               Encuesta
             </a>
-            <a href="index.html# ">Contáctenos</a>
+            <a>Contáctenos</a>
             <a href="http://www.onp.unal.edu.co " target="_top ">
               Estadísticas
             </a>
-            <a href="index.html# ">Glosario</a>
+            <a>Glosario</a>
           </nav>
           <div className="col-md-4 col-lg-4 col-sm-4 col-xs-4 col-xxs-12 footer-info ">
             <p className="col-sm-12 col-md-6 contacto ">
@@ -501,12 +501,12 @@ const Layout = ({ children }) => {
               <br />
               <a
                 title="Comuníquese con el administrador de este sitio web "
-                href="mailto:EMAIL@unal.edu.co "
+                href="mailto:lab101_bog@unal.edu.co"
               >
                 lab101_bog@unal.edu.co
               </a>
               <br />
-              <a href="index.html# ">Acerca de este sitio web</a>
+              <a href="/nosotros">Acerca de este sitio web</a>
               <br /> Actualización: 30/05/2024
             </p>
           </div>
