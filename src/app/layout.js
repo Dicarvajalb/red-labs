@@ -490,7 +490,7 @@ const Layout = ({ children }) => {
             <p className="col-sm-12 col-md-6 contacto ">
               <b>Contacto página web:</b>
               <br /> Carrera 59 # 43 - 05
-              <br /> Campus Santa Rosa (CAN) - Bloque 5.
+              <br /> Campus Santa Rosa (CAN)
               <br /> Bloque 5.
               <br /> Bogotá D.C., Colombia
               <br /> (+57) 300 568-7569
