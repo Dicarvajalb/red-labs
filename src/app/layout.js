@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     setLoaded(true);
   }, []);
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "";
   return (
     <html>
       <head>
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
     <!-- base href="http://subdominio.unal.edu.co/" --> */}
         <link
           rel="shortcut icon"
-          href="images/favicon.ico"
+          href={baseURL + "/images/favicon.ico"}
           type="image/x-icon"
         />
 
@@ -45,61 +46,61 @@ const Layout = ({ children }) => {
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/bootstrap.min.css"
+          href={baseURL + "/css/bootstrap.min.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/bootstrap-theme.min.css"
+          href={baseURL + "/css/bootstrap-theme.min.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/accesibilidad.css"
+          href={baseURL + "/css/accesibilidad.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/reset.css"
+          href={baseURL + "/css/reset.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/unal.css"
+          href={baseURL + "/css/unal.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/base.css"
+          href={baseURL + "/css/base.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/tablet.css"
+          href={baseURL + "/css/tablet.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/phone.css"
+          href={baseURL + "/css/phone.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/small.css"
+          href={baseURL + "/css/small.css"}
           media="all"
         />
         <link
           rel="stylesheet"
           type="text/css"
-          href="/css/printer.css"
+          href={baseURL + "/css/printer.css"}
           media="print"
         />
 
@@ -109,7 +110,7 @@ const Layout = ({ children }) => {
         {/*
      <script type="text/javascript" dangerouslySetInnerHTML={{__html: process.env.rawJsFromFile}}></script> 
  */}
-        <title>Inicio: Universidad Nacional de Colombia</title>
+        <title>Tecnologías para La Paz</title>
       </head>
 
       <body>
@@ -125,7 +126,7 @@ const Layout = ({ children }) => {
             <li>
               <a href="http://correo.unal.edu.co" target="_blank">
                 <img
-                  src="/images/icnServEmail.png"
+                  src={baseURL + "/images/icnServEmail.png"}
                   width="32"
                   height="32"
                   alt="Correo Electrónico"
@@ -136,7 +137,7 @@ const Layout = ({ children }) => {
             <li>
               <a href="https://dninfoa.unal.edu.co" target="_blank">
                 <img
-                  src="/images/icnServSia.png"
+                  src={baseURL + "/images/icnServSia.png"}
                   width="32"
                   height="32"
                   alt="Dirección Nacional de Información Académica"
@@ -147,7 +148,7 @@ const Layout = ({ children }) => {
             <li>
               <a href="http://bibliotecas.unal.edu.co" target="_blank">
                 <img
-                  src="/images/icnServLibrary.png"
+                  src={baseURL + "/images/icnServLibrary.png"}
                   width="32"
                   height="32"
                   alt="Biblioteca"
@@ -158,7 +159,7 @@ const Layout = ({ children }) => {
             <li>
               <a href="http://personal.unal.edu.co" target="_blank">
                 <img
-                  src="/images/icnServCall.png"
+                  src={baseURL + "/images/icnServCall.png"}
                   width="32"
                   height="32"
                   alt="Convocatorias"
@@ -169,7 +170,7 @@ const Layout = ({ children }) => {
             <li>
               <a href="http://identidad.unal.edu.co">
                 <img
-                  src="/images/icnServIdentidad.png"
+                  src={baseURL + "/images/icnServIdentidad.png"}
                   width="32"
                   height="32"
                   alt="Identidad U.N."
@@ -192,13 +193,13 @@ const Layout = ({ children }) => {
 			<img src="images/escudoUnal.png" width="93%" height="auto" className="hidden-print"/> 
 	  <![endif]--> */}
               <img
-                src="/images/escudoUnal.png"
+                src={baseURL + "/images/escudoUnal.png"}
                 width="93%"
                 height="auto"
                 className="hidden-print"
               />
               <img
-                src="images/escudoUnal_black.png"
+                src={baseURL + "/images/escudoUnal_black.png"}
                 className="visible-print"
               />
             </a>
@@ -207,7 +208,7 @@ const Layout = ({ children }) => {
             <img
               className="hidden-print"
               alt="Escudo de la República de Colombia"
-              src="/images/sealColombia.png"
+              src={baseURL + "/images/sealColombia.png"}
               width="66"
               height="66"
             />
@@ -215,7 +216,7 @@ const Layout = ({ children }) => {
             <img
               className="visible-print"
               alt="Escudo de la República de Colombia"
-              src="/images/sealColombia_black.png"
+              src={baseURL + "/images/sealColombia_black.png"}
               width="66"
               height="66"
             />
@@ -278,19 +279,21 @@ const Layout = ({ children }) => {
               <nav id="profiles">
                 <ul className="nav navbar-nav dropdown-menu">
                   <li className="item_Aspirantes #>">
-                    <a href="index.html#">Aspirantes</a>
+                    <a href="https://aspirantes.unal.edu.co/">Aspirantes</a>
                   </li>
                   <li className="item_Estudiantes #>">
-                    <a href="index.html#">Estudiantes</a>
+                    <a href="https://estudiantes.unal.edu.co/">Estudiantes</a>
                   </li>
                   <li className="item_Egresados #>">
-                    <a href="index.html#">Egresados</a>
+                    <a href="https://egresados.unal.edu.co/">Egresados</a>
                   </li>
                   <li className="item_Docentes #>">
-                    <a href="index.html#">Docentes</a>
+                    <a href="https://docentes.unal.edu.co/">Docentes</a>
                   </li>
                   <li className="item_Administrativos #>">
-                    <a href="index.html#">Administrativos</a>
+                    <a href="https://administrativos.unal.edu.co/">
+                      Administrativos
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -299,9 +302,9 @@ const Layout = ({ children }) => {
           <div
             style={{ backgroundColor: "white" }}
             id="bs-navbar"
-            class="navbar-collapse navigation"
+            className="navbar-collapse navigation"
           >
-            <div class="site-url" style={{ paddingBottom: "50px" }}>
+            <div className="site-url" style={{ paddingBottom: "50px" }}>
               tecnologiasparalapaz.unal.edu.co
             </div>
           </div>
@@ -323,7 +326,6 @@ const Layout = ({ children }) => {
                     <button
                       className="boton-panel"
                       id="letra-disminuir"
-                      onClick="cambiarTamanioLetra('-')"
                       type="submit"
                       name=""
                       value=""
@@ -333,7 +335,6 @@ const Layout = ({ children }) => {
                     <button
                       className="boton-panel"
                       id="letra-aumentar"
-                      onClick="cambiarTamanioLetra('+')"
                       type="submit"
                       name=""
                       value=""
@@ -354,7 +355,6 @@ const Layout = ({ children }) => {
                     <button
                       className="boton-panel"
                       id="contraste-1"
-                      onClick="cambiarContrastes(1)"
                       type="submit"
                       name=""
                       value=""
@@ -364,7 +364,6 @@ const Layout = ({ children }) => {
                     <button
                       className="boton-panel"
                       id="contraste-2"
-                      onClick="cambiarContrastes(2)"
                       type="submit"
                       name=""
                       value=""
@@ -374,7 +373,6 @@ const Layout = ({ children }) => {
                     <button
                       className="boton-panel"
                       id="contrate-3"
-                      onClick="cambiarContrastes(3)"
                       type="submit"
                       name=""
                       value=""
@@ -400,7 +398,6 @@ const Layout = ({ children }) => {
                     <button
                       className="boton-panel"
                       id="defaul-config"
-                      onClick="defaultConfig()"
                       type="submit"
                       name=""
                       value=""
@@ -520,14 +517,14 @@ const Layout = ({ children }) => {
                 <img
                   className="hidden-print "
                   alt="Orgullo UN "
-                  src="/images/log_orgullo.png "
+                  src={baseURL + "/images/log_orgullo.png "}
                   width="78 "
                   height="21 "
                 />
                 <img
                   className="visible-print "
                   alt="Orgullo UN "
-                  src="/images/log_orgullo_black.png "
+                  src={baseURL + "/images/log_orgullo_black.png "}
                   width="94 "
                   height="37 "
                 />
@@ -540,14 +537,14 @@ const Layout = ({ children }) => {
                 <img
                   className="hidden-print "
                   alt="Agencia de noticias "
-                  src="/images/log_agenc.png "
+                  src={baseURL + "/images/log_agenc.png "}
                   width="94 "
                   height="25 "
                 />
                 <img
                   className="visible-print "
                   alt="Agencia de noticias "
-                  src="/images/log_agenc_black.png "
+                  src={baseURL + "/images/log_agenc_black.png "}
                   width="94 "
                   height="37 "
                 />
@@ -560,7 +557,7 @@ const Layout = ({ children }) => {
               >
                 <img
                   alt="Trámites en línea "
-                  src="/images/log_gobiern.png "
+                  src={baseURL + "/images/log_gobiern.png "}
                   width="67 "
                   height="51 "
                 />
@@ -572,7 +569,7 @@ const Layout = ({ children }) => {
               >
                 <img
                   alt="Contaduría general de la republica "
-                  src="/images/log_contra.png "
+                  src={baseURL + "/images/log_contra.png "}
                   width="67 "
                   height="51 "
                 />

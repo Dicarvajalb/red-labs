@@ -78,7 +78,7 @@ export default function Home(props) {
           <Menu />
         </div>
         <div
-          className="relative flex flex-col items-center  w-full  h-fit py-6  text-white 
+          className="relative flex flex-col items-center  w-full  h-fit  text-white 
                    "
         >
           <div

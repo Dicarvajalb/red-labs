@@ -6,6 +6,7 @@ import Map from "./Map";
 import Map2 from "./Map2";
 import Menu from "./Menu";
 import Links from "./Links";
+import { baseURL } from "@/variables/env";
 
 export default function GlobalLayout({
   PrevButton,
@@ -28,7 +29,7 @@ export default function GlobalLayout({
         >
           <div className="container__title w-full h-[fit] ms-[1rem] lg:m-[2rem]  section_title flex flex-col justify-end items-start">
             <h1 className="text-white text-2xl">{subtitle || ""}</h1>
-            <h3 className="z-10 text-white text-xl lg:text-4xl font-bold">
+            <h3 className="z-10 text-white text-xl lg:text-4xl font-bold mb-10 lg:mb-0">
               {title || "titulo"}
             </h3>
           </div>
@@ -45,7 +46,7 @@ export default function GlobalLayout({
                   href={
                     "https://sites.google.com/unal.edu.co/findeter-innovacion-abierta/inicio?authuser=0"
                   }
-                  rightIcon={"/svg/externalFilled.svg"}
+                  rightIcon={baseURL + "/svg/externalFilled.svg"}
                   className={
                     "bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple"
                   }
@@ -63,12 +64,15 @@ export default function GlobalLayout({
         <div className="w-full mb-[10rem]  lg:w-[0px] bg-lightPurple overflow-hidden h-fit max-h-[5%] conatiner__buttons flex flex-col justify-end items-center border-4">
           <div className="w-[90%]">
             <BtnExternal
-              rightIcon={"/svg/externalFilled.svg"}
+              href={
+                "https://sites.google.com/unal.edu.co/findeter-innovacion-abierta/inicio?authuser=0"
+              }
+              rightIcon={baseURL + "/svg/externalFilled.svg"}
               className={
-                "bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple mb-[1rem]"
+                "bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple"
               }
             >
-              Aprende sobre Metodología de proyectos y Design Thinking
+              Convenio de innovación abierta
             </BtnExternal>
           </div>
         </div>

@@ -1,11 +1,8 @@
 "use client";
 import { gsap } from "gsap";
-import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useIsomorphicLayoutEffect } from "../../helpers/isomorphicEffect";
 import GlobalLayout from "@/Components/GlobalLayout";
-import Map from "@/Components/Map";
-import { createPortal } from "react-dom";
 import BtnAmazonia from "@/Components/BtnAmazonia";
 import BtnLaPaz from "@/Components/BtnLaPaz";
 import Image from "next/image";
@@ -144,7 +141,7 @@ export default function Home() {
     initialState();
     initialAnim();
   }, []);
-
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "";
   return (
     <>
       <GlobalLayout
@@ -154,7 +151,7 @@ export default function Home() {
           <Image
             alt="red de laboratorios ícono"
             className="mx-auto  "
-            src={"/icons/rltp.svg"}
+            src={baseURL + "/icons/rltp.svg"}
             width={"70"}
             height={"70"}
           ></Image>
@@ -165,7 +162,7 @@ export default function Home() {
       <Image
         alt="decoración de mapa"
         className="decoration__map absolute w-[30rem] lg:w-[50rem] xl:w-[60rem] z-0"
-        src={"/svg/decorationMap.svg"}
+        src={baseURL + "/svg/decorationMap.svg"}
         width={500}
         height={500}
       />

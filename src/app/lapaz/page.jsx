@@ -2,18 +2,23 @@
 import { gsap } from "gsap";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useIsomorphicLayoutEffect } from "../../../helpers/isomorphicEffect";
 import GlobalLayout from "@/Components/GlobalLayout";
 import PreviusPageButton from "@/Components/PreviusPageButton";
 import Image from "next/image";
 import BtnIcons from "@/Components/BtnIcons";
+import {
+  baseURL,
+  lapazURL,
+  micrositioURL,
+  recorrido3dURL,
+} from "@/variables/env";
 
 export function initialState() {}
 
 export function initialAnim(params, router) {
   const tMap = gsap.timeline({
     paused: true,
-    onReverseComplete: () => router.push("/"),
+    onReverseComplete: () => router.back(),
   });
 
   //containers
@@ -141,13 +146,13 @@ export default function Home(props) {
                 className="w-[0] sm:w-[100px] me-[-80px] z-10"
                 width={"100"}
                 height={"100"}
-                src={"/icons/3dpath.svg"}
+                src={baseURL + "/icons/3dpath.svg"}
               />
               <BtnIcons
-                leftIcon={"/icons/3dpath.svg"}
+                leftIcon={baseURL + "/icons/3dpath.svg"}
                 classLeft={"h-auto sm:h-[0] "}
-                rightIcon={"/svg/play.svg"}
-                href={"http://34.30.104.216/recorrido/"}
+                rightIcon={baseURL + "/svg/play.svg"}
+                href={recorrido3dURL}
                 className={
                   "w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple  gap-4 " +
                   "lg:w-[100%]"
@@ -163,13 +168,38 @@ export default function Home(props) {
               la convivencia sostenible en regiones afectadas por conflictos.
             </p>
             <BtnIcons
-              rightIcon={"/svg/externalFilled.svg"}
+              rightIcon={baseURL + "/svg/externalFilled.svg"}
               className={
                 "w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple self-end " +
                 "lg:w-[15rem]"
               }
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/@laboratoriodepazterritoria3080"
+                )
+              }
             >
               Aprende más
+            </BtnIcons>
+            <BtnIcons
+              rightIcon={baseURL + "/svg/externalFilled.svg"}
+              className={
+                "w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple self-end " +
+                "lg:w-[15rem]"
+              }
+              onClick={() => window.open(lapazURL)}
+            >
+              Sitio De La Paz
+            </BtnIcons>
+            <BtnIcons
+              rightIcon={baseURL + "/svg/externalFilled.svg"}
+              className={
+                "w-[100%] bg-ligthAlt2 text-lightPurple font-bold hover:text-lightPurple self-end " +
+                "lg:w-[15rem]"
+              }
+              onClick={() => window.open(micrositioURL)}
+            >
+              Micrositio de paz territorial
             </BtnIcons>
           </div>
         </div>

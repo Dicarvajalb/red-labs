@@ -2,6 +2,7 @@ import { useRouter } from "next/navigation";
 import Map from "./Map";
 import Menu from "./Menu";
 import Image from "next/image";
+import { baseURL } from "@/variables/env";
 
 export default function BtnExternal({
   href,
@@ -23,9 +24,7 @@ export default function BtnExternal({
       href={href}
     >
       <div className="flex flex-row items-center gap-3">
-        {leftIcon && (
-          <Image width={"50"} height={"50"} src={"/icons/ecologia.svg"}></Image>
-        )}
+        {leftIcon && <Image width={"50"} height={"50"} src={leftIcon}></Image>}
         <div>
           <p>{sede}</p>
           <p>{children}</p>
@@ -33,9 +32,10 @@ export default function BtnExternal({
       </div>
       {
         <Image
+          alt="ícono derecho"
           width={"30"}
           height={"30"}
-          src={rightIcon || "/icons/external.svg"}
+          src={rightIcon || baseURL + "/icons/external.svg"}
         ></Image>
       }
     </a>

@@ -14,15 +14,17 @@ export default function Links({
 }) {
   const router = useRouter();
   const [closed, setClosed] = useState(true);
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "";
+
   return (
     <div
-      className="z-10 container__links w-full h-[fit] max-h-[100vh] flex flex-col items-center
+      className="z-10 container__links w-full h-[fit] flex flex-col items-center
     lg:w-4/12"
     >
       <div
         className={`flex flex-col items-center w-[90%] ${
-          closed ? "h-[90px]" : "h-fit"
-        }  max-h-[100%] overflow-hidden bg-white p-[2rem] rounded-2xl gap-2 
+          closed ? "h-[90px]" : "h-[fit-content]"
+        }  flex flex-col max-h-[100%] overflow-hidden bg-white p-[2rem] rounded-2xl gap-2
              lg:mt-[2rem] lg:h-fit lg:bg-ligthAlt3`}
       >
         <h3 className="text-xl lg:text-4xl font-bold text-lightPurple mb-[2rem]">
@@ -31,7 +33,7 @@ export default function Links({
 
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/compost.svg"}
           sede={"Sede Amazonía"}
           href="../laboratorio/ecologia"
         >
@@ -39,7 +41,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/add_a_photo.svg"}
           sede={"Sede Bogotá"}
           href="../laboratorio/fotografia"
         >
@@ -47,7 +49,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/3d_rotation.svg"}
           sede={"Sede Bogotá"}
           href="../laboratorio/fundicion"
         >
@@ -55,7 +57,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/animation.svg"}
           sede={"Sede Bogotá"}
           href="../laboratorio/imagen_digital"
         >
@@ -63,7 +65,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/memory.svg"}
           sede={"Sede Bogotá"}
           href="../laboratorio/lab101"
         >
@@ -71,7 +73,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/biotech.svg"}
           sede={"Sede Amazonía"}
           href="../laboratorio/fisica_quimica_biologia"
         >
@@ -79,7 +81,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/waves.svg"}
           sede={"Sede Amazonía"}
           href="../laboratorio/humedales"
         >
@@ -87,7 +89,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/neurology.svg"}
           sede={"Sede Bogotá"}
           href="../laboratorio/neurociencia"
         >
@@ -95,7 +97,7 @@ export default function Links({
         </BtnExternal>
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
-          leftIcon={"d"}
+          leftIcon={baseURL + "/icons/peace.svg"}
           sede={"Sede La Paz"}
           href="../laboratorio/paz"
         >
@@ -104,7 +106,8 @@ export default function Links({
         </BtnExternal>
       </div>
       <Image
-        src="/svg/HomeArrow.svg"
+        alt="ícono"
+        src={baseURL + "/svg/HomeArrow.svg"}
         width={50}
         height={50}
         className={`w-[50px] cursor-pointer overflow-hidden lg:w-[0] mt-[-25px] z-10 ${
