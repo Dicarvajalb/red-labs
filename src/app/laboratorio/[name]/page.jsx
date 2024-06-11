@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Note from "@/Components/Note";
 import Menu from "@/Components/Menu";
 import Image from "next/image";
+import { baseURL } from "@/variables/env";
 
 const data = {
   lab101: {
@@ -228,8 +229,12 @@ const data = {
   },
   paz: {
     name: "Laboratorio de Paz Territorial",
-    description:
-      "El laboratorio se configura como una estrategia de comunicación y socialización sobre la paz por parte de la Universidad Nacional de Colombia. Una vez se convierte en proyecto des banco de proyectos con cuatro objetivos: i) Divulgar los valores sociales que forman tejido social en el Cesar. ii) Seguridad alimentaria en la región del Cesar. iii) Conflictos ambientales y territoriales: identificación de conflictos. iv) Migración venezolana y manejo de la frontera: Revisión del escenario de migración con estudios de caso en La Paz y Manaure.",
+    description: `El laboratorio se configura como una estrategia de comunicación y socialización sobre la paz por parte de la Universidad Nacional de Colombia. Una vez se convierte en proyecto des banco de proyectos con cuatro objetivos: 
+
+i) Divulgar los valores sociales que forman tejido social en el Cesar. 
+ii) Seguridad alimentaria en la región del Cesar. 
+iii) Conflictos ambientales y territoriales: identificación de conflictos. 
+iv) Migración venezolana y manejo de la frontera: Revisión del escenario de migración con estudios de caso en La Paz y Manaure.`,
     relevantInfo: {
       headquarter: "De La Paz, Cesar, Colombia",
       direction: "Kilómetro 9 Vía Valledupar - La Paz",
@@ -285,10 +290,10 @@ const Layout = ({ params }) => {
               <div
                 className={`text-xl font-normal h-fit flex flex-row flex-wrap w-full gap-4`}
               >
-                <div className="bg-ligthAlt3  rounded-xl p-4 text-lightPurple grow basis-[70%]  min-w-[150px]">
+                <div className="bg-ligthAlt3  rounded-xl p-4 text-lightPurple grow basis-[70%]  min-w-[150px] whitespace-pre-wrap">
                   <p>{selected.description}</p>
                 </div>
-                <div className="bg-ligthAlt3  rounded-xl p-4 text-lightPurple grow basis-[20%]  min-w-[150px]">
+                <div className="bg-ligthAlt3  rounded-xl p-4 text-lightPurple grow basis-[20%]  min-w-[150px] break-words">
                   {selected.relevantInfo.headquarter && (
                     <p>{selected.relevantInfo.headquarter}</p>
                   )}
@@ -323,7 +328,10 @@ const Layout = ({ params }) => {
                       Artículos académicos
                     </h2>
                     {selected.publications.map((article, i) => (
-                      <p key={i}>{article}</p>
+                      <>
+                        <p key={i}>{article}</p>
+                        <br />
+                      </>
                     ))}
                   </div>
                 )}
@@ -351,14 +359,14 @@ const Layout = ({ params }) => {
         <Image
           alt="decoración izquierda"
           className="absolute left-0 top-0 opacity-20 lg:opacity-100 z-0"
-          src={"/svg/leftDecoration.svg"}
+          src={baseURL + "/svg/leftDecoration.svg"}
           width={500}
           height={100}
         />
         <Image
           alt="decoración derecha"
           className="absolute right-0 top-0 opacity-20 lg:opacity-100 z-0"
-          src={"/svg/rightDecoration.svg"}
+          src={baseURL + "/svg/rightDecoration.svg"}
           width={350}
           height={100}
         />

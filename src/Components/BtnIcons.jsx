@@ -2,6 +2,7 @@ import { useRouter } from "next/navigation";
 import Map from "./Map";
 import Menu from "./Menu";
 import Image from "next/image";
+import { baseURL } from "@/variables/env";
 
 export default function BtnIcons({
   href,
@@ -28,6 +29,7 @@ export default function BtnIcons({
     >
       {leftIcon && (
         <Image
+          alt="ícono izquierdo"
           className={classLeft}
           width={"50"}
           height={"50"}
@@ -42,10 +44,11 @@ export default function BtnIcons({
       </div>
       {
         <Image
+          alt="ícono derecho"
           className={"ms-2 " + classRight}
           width={"40"}
           height={"40"}
-          src={rightIcon || "/icons/external.svg"}
+          src={rightIcon || baseURL + "/icons/external.svg"}
         ></Image>
       }
     </a>

@@ -1,11 +1,17 @@
-var fs = require('fs');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    distDir: 'build',
-    env:{
-      accesibilidadJs: fs.readFileSync('./public/index-header.html').toString(),
-    }
-}
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/html",
+          destination: "/index.html",
+        },
+      ],
+    };
+  },
 
-module.exports = nextConfig
+  basePath: process.env.BASE_URL || "",
+};
+
+module.exports = nextConfig;
