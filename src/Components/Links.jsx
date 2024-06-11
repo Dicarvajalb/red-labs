@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BtnExternal from "./BtnExternal";
 import { useState } from "react";
+import { baseURL } from "@/variables/env";
 
 export default function Links({
   href,
@@ -35,7 +36,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/compost.svg"}
           sede={"Sede Amazonía"}
-          href="../laboratorio/ecologia"
+          href={baseURL + "/laboratorio/ecologia"}
         >
           Ecología y Conservación de la Flora y Fauna Silvestre
         </BtnExternal>
@@ -43,7 +44,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/add_a_photo.svg"}
           sede={"Sede Bogotá"}
-          href="../laboratorio/fotografia"
+          href={baseURL + "/laboratorio/fotografia"}
         >
           Fotografía
         </BtnExternal>
@@ -51,7 +52,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/3d_rotation.svg"}
           sede={"Sede Bogotá"}
-          href="../laboratorio/fundicion"
+          href={baseURL + "/laboratorio/fundicion"}
         >
           Fundición y Pulvimetalurgia
         </BtnExternal>
@@ -59,7 +60,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/animation.svg"}
           sede={"Sede Bogotá"}
-          href="../laboratorio/imagen_digital"
+          href={baseURL + "/laboratorio/imagen_digital"}
         >
           Imagen Digital
         </BtnExternal>
@@ -67,7 +68,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/memory.svg"}
           sede={"Sede Bogotá"}
-          href="../laboratorio/lab101"
+          href={baseURL + "/laboratorio/lab101"}
         >
           LAB101
         </BtnExternal>
@@ -75,7 +76,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/biotech.svg"}
           sede={"Sede Amazonía"}
-          href="../laboratorio/fisica_quimica_biologia"
+          href={baseURL + "/laboratorio/fisica_quimica_biologia"}
         >
           Laboratorio de Física, Química y Biología
         </BtnExternal>
@@ -83,7 +84,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/waves.svg"}
           sede={"Sede Amazonía"}
-          href="../laboratorio/humedales"
+          href={baseURL + "/laboratorio/humedales"}
         >
           Manejo y Gestión de Humedales
         </BtnExternal>
@@ -91,7 +92,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/neurology.svg"}
           sede={"Sede Bogotá"}
-          href="../laboratorio/neurociencia"
+          href={baseURL + "/laboratorio/neurociencia"}
         >
           Neurociencia cognitiva y comunicación
         </BtnExternal>
@@ -99,7 +100,7 @@ export default function Links({
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/peace.svg"}
           sede={"Sede La Paz"}
-          href="../laboratorio/paz"
+          href={baseURL + "/laboratorio/paz"}
         >
           {" "}
           Paz Territorial

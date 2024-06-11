@@ -6,6 +6,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { baseURL } from "@/variables/env";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,6 @@ const Layout = ({ children }) => {
   useEffect(() => {
     setLoaded(true);
   }, []);
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "";
   return (
     <html>
       <head>

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Note from "@/Components/Note";
 import Menu from "@/Components/Menu";
 import Image from "next/image";
+import { baseURL } from "@/variables/env";
 
 const data = {
   lab101: {
@@ -358,14 +359,14 @@ const Layout = ({ params }) => {
         <Image
           alt="decoración izquierda"
           className="absolute left-0 top-0 opacity-20 lg:opacity-100 z-0"
-          src={"/svg/leftDecoration.svg"}
+          src={baseURL + "/svg/leftDecoration.svg"}
           width={500}
           height={100}
         />
         <Image
           alt="decoración derecha"
           className="absolute right-0 top-0 opacity-20 lg:opacity-100 z-0"
-          src={"/svg/rightDecoration.svg"}
+          src={baseURL + "/svg/rightDecoration.svg"}
           width={350}
           height={100}
         />
