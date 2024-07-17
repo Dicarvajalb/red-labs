@@ -1,3 +1,5 @@
+
+
 //Previo a funciones
 	var newClass = 0;
 	var convalue = 0;
@@ -63,13 +65,9 @@ function closeAccess(detail, className)
         detail.className = detail.className.replace(reg, ' ');
     }
 }
-const event = new Event("open");
-function accesstab() {
-    
-    console.log("EVENT", event)
-    window.dispatchEvent(event);
 
-    console.log("Abriendo")
+export function accesstab() {
+    console.log("Apps")
   		var mainwin = document.getElementsByClassName("detalle")[0];
         if (document.getElementById("panel-accesibilidad").style.display === 'none' ) {
             document.getElementById("panel-accesibilidad").setAttribute("style", "display:block");

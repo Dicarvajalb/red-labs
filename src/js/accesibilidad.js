@@ -63,13 +63,13 @@ function closeAccess(detail, className)
         detail.className = detail.className.replace(reg, ' ');
     }
 }
-const event = new Event("open");
+
 function accesstab() {
-    
+    const event = new Event("open");
     console.log("EVENT", event)
     window.dispatchEvent(event);
 
-    console.log("Abriendo")
+
   		var mainwin = document.getElementsByClassName("detalle")[0];
         if (document.getElementById("panel-accesibilidad").style.display === 'none' ) {
             document.getElementById("panel-accesibilidad").setAttribute("style", "display:block");
@@ -112,7 +112,6 @@ function cambiarTamanioLetra(movement) {
 
 
 // Invertir colores
-
 function invertirColores(recover = false) {
     var css = 'html {-webkit-filter: invert(100%);' +
         '-moz-filter: invert(100%);' +
@@ -188,6 +187,7 @@ function varload(){
 
 
 window.onload = function(){
-  document.getElementById("pestania-accesibilidad").addEventListener( 'click', accesstab);
+    document.getElementById("pestania-accesibilidad").addEventListener( 'click', accesstab);
+    
 }
   

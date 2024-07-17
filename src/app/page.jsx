@@ -1,42 +1,71 @@
 "use client";
-import { gsap } from "gsap";
-import { useEffect, useRef, useState } from "react";
-import { useIsomorphicLayoutEffect } from "../../helpers/isomorphicEffect";
-import GlobalLayout from "@/Components/GlobalLayout";
 import BtnAmazonia from "@/Components/BtnAmazonia";
 import BtnLaPaz from "@/Components/BtnLaPaz";
+import GlobalLayout from "@/Components/GlobalLayout";
+import { gsap } from "gsap";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export function moveMarker() {
   var targetPos = document
     .getElementsByClassName("amazonia_svg")[0]
-    ?.getClientRects()[0];
+    ?.getBoundingClientRect();
   var selfPos = document
     .getElementsByClassName("btn__amazonia")[0]
-    ?.getClientRects()[0];
+    ?.getBoundingClientRect();
 
-  console.log("[target pos]", targetPos);
+  console.log("[target pos amazonas]", targetPos, selfPos);
 
   var tMoveMarker = gsap.timeline();
+  console.log("top "+targetPos.top,
+    "yScroll "+window.scrollY ,
+    "self height "+selfPos.height ,
+    "target h "+targetPos.height, selfPos)
+    // transformOrigin: "100% 50%"
   if (targetPos && selfPos) {
     tMoveMarker.add(
-      gsap.to(".btn__amazonia", { transformOrigin: "100% 50%", duration: 0 }),
+      gsap.to(".btn__amazonia", {scale: 1, opacity: 1, duration: 0 }),
       0
     );
     tMoveMarker.add(
       gsap.to(".btn__amazonia", {
         top:
           targetPos.top +
-          window.scrollY -
-          selfPos.height +
-          targetPos.height / 3,
+          window.scrollY - selfPos.height + (targetPos.height/2),
+          
+          
+        duration: 0,
+      }),
+      0
+    );
+    /*
+    tMoveMarker.add(
+      gsap.to(".btn__amazonia", {  duration: 2, zIndex:100, scaleX:0, scaleY:0, repeat: -1, yoyo: true }),
+      0
+    );
+    tMoveMarker.add(
+      gsap.to(".btn_test", {  duration: 1, zIndex:100, scaleX:0, scaleY:0, repeat: -1, yoyo: true }),
+      0
+    );
+    tMoveMarker.add(
+      gsap.to(".btn_test", {
+        top:
+          targetPos.top + window.scrollY,
         duration: 0,
       }),
       0
     );
     tMoveMarker.add(
+      gsap.to(".btn_test", {
+        left: targetPos.left + 50,
+        duration: 0,
+      }),
+      0
+    );
+    */
+    tMoveMarker.add(
       gsap.to(".btn__amazonia", {
-        left: targetPos.left - selfPos.width / 2 + targetPos.width / 2,
+        left: targetPos.left + targetPos.width/2 - selfPos.width/2,
         duration: 0,
       }),
       0
@@ -45,9 +74,11 @@ export function moveMarker() {
   var targetPos = document
     .getElementsByClassName("cesar_svg")[0]
     .getClientRects()[0];
+
+    console.log("[target pos amazonas]", targetPos, selfPos);
   if (targetPos && selfPos) {
     tMoveMarker.add(
-      gsap.to(".btn__lapaz", { transformOrigin: "100% 50%", duration: 0 }),
+      gsap.to(".btn__lapaz", { transformOrigin: "100% 50%", scale: 1, opacity: 1, duration: 0 }),
       0
     );
     tMoveMarker.add(
@@ -111,9 +142,8 @@ export function initialState() {
 }
 
 export function initialAnim() {
-  gsap.set([".btn__amazonia", ".btn__lapaz"], { scale: 0, duration: 0 });
-  gsap.to(".btn__lapaz", { scale: 1, duration: 1 });
-  gsap.to(".btn__amazonia", { scale: 1, duration: 1 });
+  gsap.set([".btn__amazonia", ".btn__lapaz"], { scale: 1, duration: 0, opacity: 0, top: 0, left:0 });
+  
   gsap.set(".amazonia_svg", { x: 0 });
 }
 
@@ -135,12 +165,31 @@ export default function Home() {
     }
   }, [ref]);
 
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     window.addEventListener("resize", moveMarker);
+    window.addEventListener("open",() => setTimeout(() => {
+      
+      initialState();
+      
+      }, 0));
     window.addEventListener("resize", moveDecoration);
-    initialState();
-    initialAnim();
+    initialAnim()
+    setTimeout(() => {
+      
+      initialState();
+      
+      }, 200);
+    return () => {
+      window.removeEventListener("resize", moveMarker);
+      window.removeEventListener("resize", moveDecoration);
+    } 
   }, []);
+  const btnAmazonasRef = useRef()
+  useEffect(() => {
+    if(btnAmazonasRef.current){
+      //btnAmazonasRef.current.style = `top:${}`
+    }
+  }, [btnAmazonasRef.current]);
   const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "";
   return (
     <>
@@ -159,6 +208,8 @@ export default function Home() {
           <h3 className="mx-auto w-fit">TECNOLOGÍAS PARA LA PAZ</h3>
         </div>
       </GlobalLayout>
+      
+
       <Image
         alt="decoración de mapa"
         className="decoration__map absolute w-[30rem] lg:w-[50rem] xl:w-[60rem] z-0"

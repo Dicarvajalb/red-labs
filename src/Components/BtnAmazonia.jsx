@@ -1,8 +1,6 @@
-import { useRouter } from "next/navigation";
-import Map from "./Map";
-import Menu from "./Menu";
-import Image from "next/image";
 import { baseURL } from "@/variables/env";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function BtnAmazonia({ url, className }) {
   const router = useRouter();

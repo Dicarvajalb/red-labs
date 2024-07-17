@@ -8,7 +8,7 @@ export default function Menu() {
   const [closed, setClosed] = useState(true);
 
   return (
-    <div className="flex flex-row h-[3rem]">
+    <div className="flex flex-row h-[3rem] bg-ligthAlt1">
       <div className="grow flex flex-row items-center lg:justify-end justify-center gap-4">
         <Image
           alt="ícono"
