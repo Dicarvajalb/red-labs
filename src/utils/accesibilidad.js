@@ -1,3 +1,5 @@
+
+
 //Previo a funciones
 	var newClass = 0;
 	var convalue = 0;
@@ -63,12 +65,9 @@ function closeAccess(detail, className)
         detail.className = detail.className.replace(reg, ' ');
     }
 }
-const event = new Event("open");
-function accesstab() {
-    console.log("EVENT", event)
-    window.dispatchEvent(event);
 
-    console.log("Abriendo")
+export function accesstab() {
+    console.log("Apps")
   		var mainwin = document.getElementsByClassName("detalle")[0];
         if (document.getElementById("panel-accesibilidad").style.display === 'none' ) {
             document.getElementById("panel-accesibilidad").setAttribute("style", "display:block");
@@ -113,7 +112,6 @@ function cambiarTamanioLetra(movement) {
 // Invertir colores
 
 function invertirColores(recover = false) {
-    console.log("invirtiendo")
     var css = 'html {-webkit-filter: invert(100%);' +
         '-moz-filter: invert(100%);' +
         '-o-filter: invert(100%);' +
@@ -142,7 +140,6 @@ function invertirColores(recover = false) {
 //Cambiar Contrastes
 
 function cambiarContrastes(number) {
-    console.log("contrast")
   	convalue;
   	(function () {
   		//console.log('antes es '+convalue);
@@ -190,6 +187,5 @@ function varload(){
 
 window.onload = function(){
   document.getElementById("pestania-accesibilidad").addEventListener( 'click', accesstab);
-  console.log("elem", document.getElementById("pestania-accesibilidad"))
 }
   

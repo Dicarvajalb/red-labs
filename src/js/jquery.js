@@ -1,3 +1,5 @@
+if(typeof window !== 'undefined' && typeof document !== 'undefined')
+{
 /*!
  * jQuery JavaScript Library v1.11.0
  * http://jquery.com/
@@ -11136,3 +11138,4 @@ $carousel.carousel($carousel.data())
 })
 })
 }(jQuery);
+}

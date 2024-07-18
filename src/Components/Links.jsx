@@ -1,9 +1,8 @@
 "use client";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
-import BtnExternal from "./BtnExternal";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { baseURL } from "@/variables/env";
+import BtnExternal from "./BtnExternal";
 
 export default function Links({
   href,
@@ -25,8 +24,8 @@ export default function Links({
       <div
         className={`flex flex-col items-center w-[90%] ${
           closed ? "h-[90px]" : "h-[fit-content]"
-        }  flex flex-col max-h-[100%] overflow-hidden bg-white p-[2rem] rounded-2xl gap-2
-             lg:mt-[2rem] lg:h-fit lg:bg-ligthAlt3`}
+        }  flex flex-col max-h-[100%] overflow-hidden bg-ligthAlt1 p-[2rem] rounded-2xl gap-2
+             lg:mt-[2rem] lg:h-fit lg:bg-ligthAlt1`}
       >
         <h3 className="text-xl lg:text-4xl font-bold text-lightPurple mb-[2rem]">
           Conoce nuestros laboratorios
