@@ -1,3 +1,6 @@
+if(typeof window !== 'undefined' && typeof document !== 'undefined')
+{
+
 //Previo a funciones
 	var newClass = 0;
 	var convalue = 0;
@@ -191,3 +194,4 @@ window.onload = function(){
     
 }
   
+}

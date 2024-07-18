@@ -3,16 +3,10 @@ import { baseURL } from "@/variables/env";
 
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
-import '../loader/loader';
 
+
+import "./globals.css";
 import Script from "next/script";
-import "../js/accesibilidad";
-import "../js/bootstrap.bundle.min";
-import "../js/jquery";
-import "../js/unal";
-import "./globals.css";
-
-import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,7 +44,10 @@ const Layout = ({ children }) => {
   <link rel="stylesheet" type="text/css" href={baseURL+"/css/printer.css"} media="print"/>
 
   
- 
+  <Script strategy="beforeInteractive" src={baseURL+"/js/jquery.js"} type="text/javascript"></Script>
+  <Script strategy="afterInteractive" src={baseURL+"/js/unal.js"} type="text/javascript"></Script>
+  <Script strategy="beforeInteractive" src={baseURL+"/js/accesibilidad.js"} type="text/javascript"></Script>
+  <Script strategy="beforeInteractive" src={baseURL+"/js/bootstrap.bundle.min.js"} type="text/javascript"></Script>
 
   <title>Inicio: Universidad Nacional de Colombia</title>
 </head>
@@ -307,16 +304,16 @@ const Layout = ({ children }) => {
             <button
               class="boton-panel"
               id="letra-disminuir"
-              onclick="cambiarTamanioLetra('-')"
-              type="submit"
+              onClick={() => null}
+              type="normal"
               name=""
               value="">A<sup>-</sup>
             </button>
             <button
               class="boton-panel"
               id="letra-aumentar"
-              onclick="cambiarTamanioLetra('+')"
-              type="submit"
+              onClick={() => null}
+              type="normal"
               name=""
               value="">
               A<sup>+</sup>
@@ -334,24 +331,24 @@ const Layout = ({ children }) => {
             <button
               class="boton-panel"
               id="contraste-1"
-              onclick="cambiarContrastes(1)"
-              type="submit"
+              onClick={() =>cambiarContrastes(1)}
+              type="button"
               name=""
               value="">1
             </button>
             <button
               class="boton-panel"
               id="contraste-2"
-              onclick="cambiarContrastes(2)"
-              type="submit"
+              onClick={() => cambiarContrastes(2)}
+              type="button"
               name=""
               value="">2
             </button>
             <button
               class="boton-panel"
               id="contrate-3"
-              onclick="cambiarContrastes(3)"
-              type="submit"
+              onClick={() => cambiarContrastes(3)}
+              type="button"
               name=""
               value="">3
             </button>
@@ -361,8 +358,8 @@ const Layout = ({ children }) => {
             <button
               class="boton-panel"
               id="inversor"
-              onclick="invertirColores()"
-              type="submit"
+              onClick={() => invertirColores()}
+              type="button"
               name=""
               value="">Aplicar
             </button>
@@ -372,8 +369,8 @@ const Layout = ({ children }) => {
             <button
               class="boton-panel"
               id="defaul-config"
-              onclick="defaultConfig()"
-              type="submit"
+              onClick={() => defaultConfig()}
+              type="button"
               name=""
               value="">
               Aplicar
@@ -499,10 +496,7 @@ const Layout = ({ children }) => {
   </footer>
   
 </body>
-<Script src={baseURL+"/js/jquery.js"} type="text/javascript"></Script>
-  <Script src={baseURL+"/js/unal.js"} type="text/javascript"></Script>
-  <Script src={baseURL+"/js/accesibilidad.js"} type="text/javascript"></Script>
-  <Script src={baseURL+"/js/bootstrap.bundle.min.js"} type="text/javascript"></Script>
+
 </html>
   );
 };

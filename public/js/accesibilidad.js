@@ -65,7 +65,6 @@ function closeAccess(detail, className)
 }
 const event = new Event("open");
 function accesstab() {
-    
     console.log("EVENT", event)
     window.dispatchEvent(event);
 
@@ -114,6 +113,7 @@ function cambiarTamanioLetra(movement) {
 // Invertir colores
 
 function invertirColores(recover = false) {
+    console.log("invirtiendo")
     var css = 'html {-webkit-filter: invert(100%);' +
         '-moz-filter: invert(100%);' +
         '-o-filter: invert(100%);' +
@@ -142,6 +142,7 @@ function invertirColores(recover = false) {
 //Cambiar Contrastes
 
 function cambiarContrastes(number) {
+    console.log("contrast")
   	convalue;
   	(function () {
   		//console.log('antes es '+convalue);
@@ -189,5 +190,6 @@ function varload(){
 
 window.onload = function(){
   document.getElementById("pestania-accesibilidad").addEventListener( 'click', accesstab);
+  console.log("elem", document.getElementById("pestania-accesibilidad"))
 }
   
