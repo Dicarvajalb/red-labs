@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 
 
-import "./globals.css";
 import Script from "next/script";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 <head>
   <meta charset="utf-8"/>
  
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href={baseURL+"/images/favicon.ico"} type="image/x-icon"/>
 
   <meta name="revisit-after" content="1 hour"/>
   <meta name="distribution" content="all"/>
@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
       </li>
     </ul>
   </div>
-  <header id="unalTop">
+  <header id="unalTop" style={{zIndex: 40}}>
     <div class="logo">
       <a href="https://unal.edu.co">
         <svg width="93%" height="93%">
@@ -116,8 +116,9 @@ const Layout = ({ children }) => {
       <div class="content-fluid">
         <nav class="navbar navbar-expand-md nav navbar-dark">
           <div class=" collapse navbar-collapse navbar-default" id="navbarSupportedContent">
-            <nav id="profiles">
+            <nav id="profiles" >
               <ul class="mr-auto nav justify-content-end">
+              
                 <li class="nav-item item_Aspirantes #>">
                   <a href="http://aspirantes.unal.edu.co">Aspirantes</a>
                 </li>
@@ -162,9 +163,9 @@ const Layout = ({ children }) => {
           <div class="collapse btn-group languageMenu d-none d-md-block">
             <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">es<span class="caret"></span></div>
             <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="index.html#">EN - English</a></li>
-              <li><a href="index.html#">GUC - Wayuunaiki</a></li>
-              <li><a href="index.html#">PBB - Nasa yuwe</a></li>
+              <li><a href="">EN - English</a></li>
+              <li><a href="">GUC - Wayuunaiki</a></li>
+              <li><a href="">PBB - Nasa yuwe</a></li>
             </ul>
           </div>
         </nav>
@@ -261,7 +262,7 @@ const Layout = ({ children }) => {
         id="btn_hamburguer">
       </button>
 
-      <div class="collapse navbar-collapse" id="navbar_content">
+      <div class="collapse navbar-collapse" id="navbar_content" >
         <div class="site-url" id="container_subdominio_mobil"></div>
         <div class="buscador" id="container_buscador_mobil"></div>
         <div id="container_mainmenu_mobil"></div>
@@ -394,7 +395,7 @@ const Layout = ({ children }) => {
       <nav class="col-lg-3 col-md-3 col-sm-4 col-6 gobiernoLinea">
           <a href="http://www.legal.unal.edu.co" target="_top">Régimen Legal</a>
           <a href="http://personal.unal.edu.co" target="_top">Talento humano</a>
-          <a href="http://contratacion.unal.edu.co" target="_top">Contratación</a>
+          <a href="https://portaladquisiciones.unal.edu.co/" target="_top">Contratación</a>
           <a href="http://personal.unal.edu.co" target="_top">Ofertas de empleo</a>
           <a href="http://launalcuenta.unal.edu.co/" target="_top">Rendición de cuentas</a>
           <a href="http://docentes.unal.edu.co/concurso-profesoral/" target="_top">Concurso docente</a>
@@ -405,15 +406,15 @@ const Layout = ({ children }) => {
       </nav>
       <nav class="col-lg-3 col-md-3 col-sm-4 col-6 gobiernoLinea">
           <a href="http://correo.unal.edu.co" target="_top">Correo institucional</a>
-          <a href="#">Mapa del sitio</a>
+          <a href={baseURL+"/mapa-sitio"}>Mapa del sitio</a>
           <a href="http://redessociales.unal.edu.co" target="_top">Redes Sociales</a>
-          <a href="#">FAQ</a>
-          <a href="http://unal.edu.co/quejas-y-reclamos/" target="_self">Quejas y reclamos</a>
+          <a href="https://unal.edu.co/faq">FAQ</a>
+          <a href="https://quejasyreclamos.unal.edu.co/" target="_self">Quejas y reclamos</a>
           <a href="http://unal.edu.co/atencion-en-linea/" target="_self">Atención en línea</a>
-          <a href="http://unal.edu.co/encuesta/" target="_self">Encuesta</a>
-          <a href="mailto:lab101_bog@unal.edu.co">Contáctenos</a>
+          <a href="https://unal.edu.co/egresados" target="_self">Encuesta</a>
+          <a href="https://unal.edu.co/contactenos">Contáctenos</a>
           <a href="http://estadisticas.unal.edu.co/" target="_top">Estadísticas</a>
-          <a href="#">Glosario</a>
+          <a href="https://unal.edu.co/glosario">Glosario</a>
       </nav>
       <div class="col-lg-4 col-md-4 col-sm-4 col-12 footer-info">
         <div class="row footer-info-spacing">
@@ -426,7 +427,7 @@ const Layout = ({ children }) => {
             (+57) 300 568-7569
           </p>
           <p class="col-lg-6 col-md-12 col-sm-12 col-6 derechos">
-            <a href="https://unal.edu.co/fileadmin/user_upload/docs/legal.pdf" target="_blank">&copy; Copyright 2019</a><br/>
+            <a href="https://unal.edu.co/fileadmin/user_upload/docs/legal.pdf" target="_blank">&copy; Copyright 2024</a><br/>
             Algunos derechos reservados.<br/>
             <a
             title="Comuníquese con el administrador de este sitio web"

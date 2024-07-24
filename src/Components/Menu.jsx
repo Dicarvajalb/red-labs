@@ -26,7 +26,7 @@ export default function Menu() {
           href={"/amazonas"}
           className="text-2xl text-lightPurple font-bold"
         >
-          Amazonía
+          Amazonia
         </Link>
         <Link href={"/lapaz"} className="text-2xl text-lightPurple font-bold">
           De La Paz
@@ -41,7 +41,7 @@ export default function Menu() {
       <div className="relative grow  flex flex-row justify-center">
         <Image
           alt="ícono"
-          className="cursor-pointer lg:cursor-auto"
+          className="cursor-pointer pointer-events-auto lg:cursor-auto lg:pointer-events-none"
           onClick={() => setClosed(!closed)}
           src={baseURL + "/icons/burgerMenu.svg"}
           width={"30"}
@@ -53,7 +53,7 @@ export default function Menu() {
               Página Principal
             </Link>
             <Link href={"/amazonas"} className="text-lightPurple font-bold">
-              Amazonía
+              Amazonia
             </Link>
             <Link href={"/lapaz"} className="text-lightPurple font-bold">
               De La Paz
