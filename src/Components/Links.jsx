@@ -34,7 +34,7 @@ export default function Links({
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/compost.svg"}
-          sede={"Sede Amazonía"}
+          sede={"Sede Amazonia"}
           href={baseURL + "/laboratorio/ecologia"}
         >
           Ecología y Conservación de la Flora y Fauna Silvestre
@@ -74,7 +74,7 @@ export default function Links({
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/biotech.svg"}
-          sede={"Sede Amazonía"}
+          sede={"Sede Amazonia"}
           href={baseURL + "/laboratorio/fisica_quimica_biologia"}
         >
           Laboratorio de Física, Química y Biología
@@ -82,7 +82,7 @@ export default function Links({
         <BtnExternal
           className={"text-white font-bold hover:text-white bg-lightPurple"}
           leftIcon={baseURL + "/icons/waves.svg"}
-          sede={"Sede Amazonía"}
+          sede={"Sede Amazonia"}
           href={baseURL + "/laboratorio/humedales"}
         >
           Manejo y Gestión de Humedales

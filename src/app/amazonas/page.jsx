@@ -1,15 +1,15 @@
 "use client";
-import { gsap } from "gsap";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import BtnAmazonia from "@/Components/BtnAmazonia";
+import BtnIcons from "@/Components/BtnIcons";
+import BtnLaPaz from "@/Components/BtnLaPaz";
 import GlobalLayout from "@/Components/GlobalLayout";
 import PreviusPageButton from "@/Components/PreviusPageButton";
-import BtnIcons from "@/Components/BtnIcons";
-import BtnAmazonia from "@/Components/BtnAmazonia";
-import BtnLaPaz from "@/Components/BtnLaPaz";
-import Image from "next/image";
-import { initialState } from "../page";
 import { baseURL } from "@/variables/env";
+import { gsap } from "gsap";
+import Image from "next/image";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import { initialState } from "../page";
 
 export function initialAnim(params, router) {
   const tMap = gsap.timeline({
@@ -120,7 +120,7 @@ export default function Home(props) {
   return (
     <>
       <GlobalLayout
-        title={"Amazonía"}
+        title={"Amazonia"}
         subtitle={
           "Viaje hacia la construcción de entornos pacíficos y autónomos"
         }
@@ -139,8 +139,7 @@ export default function Home(props) {
               Exposición virtual sobre soberanía alimentaria: Descubriendo la
               importancia de garantizar el derecho de las comunidades a
               producir, acceder y controlar sus propios alimentos de forma
-              sostenible e inclusiva." Estudio Soberanía alimentaria Sede
-              Amazonía Galería
+              sostenible e inclusiva.
             </p>
             <BtnIcons
               onClick={() => router.push("/amazonas/galeria")}

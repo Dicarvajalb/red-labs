@@ -1,17 +1,11 @@
 "use client";
+import BtnIcons from "@/Components/BtnIcons";
+import Menu from "@/Components/Menu";
+import Note from "@/Components/Note";
 import { gsap } from "gsap";
+import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { useIsomorphicLayoutEffect } from "../../../helpers/isomorphicEffect";
-import GlobalLayout from "@/Components/GlobalLayout";
-import PreviusPageButton from "@/Components/PreviusPageButton";
-import UbicationBtn from "@/Components/UbicationBtn";
-import BtnExternal from "@/Components/BtnExternal";
-import BtnInternal from "@/Components/BtnInternal";
-import Image from "next/image";
-import Menu from "@/Components/Menu";
-import BtnIcons from "@/Components/BtnIcons";
-import Note from "@/Components/Note";
 
 export function initialState() {}
 
@@ -241,7 +235,7 @@ export default function Home(props) {
                 </div>
                 <div className="flex gap-[2rem] flex-col w-[100%] md:w-[50%] ">
                   <Note className={"basis-1/3 "}>
-                    <b>Sede Amazonía</b>
+                    <b>Sede Amazonia</b>
                     <ul className="marker:text-lightPurple list-disc">
                       <li>Laboratorio de Física, Química y Biología</li>
                       <li>Manejo y Gestión de Humedales</li>

@@ -110,7 +110,7 @@ Para responder a la situación actual se hace necesario pensar en estrategias de
   {
     title: "SECCIÓN 1: ENTENDIENDO LA SOBERANÍA ALIMENTARIA ",
     subtitle: "1. Definición de soberanía alimentaria",
-    description: `La conceptualización de la soberanía alimentaria ha evolucionado significativamente desde su introducción por La Vía Campesina en 1996, siendo la Declaración de Nyéléni en Mali, 2007, uno de los enfoques más ampliamente reconocidos. Esta declaración enfatiza las redes de subsistencia y los sistemas locales, señalando que los conocimientos esenciales para la soberanía alimentaria residen principalmente en campesinos, pescadores, pastores y aquellos que cohabitan y trabajan en los bosques (Micarelli, 2018). En el contexto de la Amazonía, es indispensable el saber de las comunidades indígenas que habitan y se relacionan con esta región. Micarelli (2018) argumenta que, a pesar del reconocimiento de la importancia de que las comunidades ejerzan control sobre sus bienes comunes territoriales, las complejas interrelaciones entre la soberanía alimentaria, los bienes comunes y la soberanía territorial comunitaria permanecen en gran medida desatendidas. Es crucial atender a estas interacciones, pues son a través de ellas que las comunidades y movimientos sociales articulan su resistencia y reivindican su autonomía.  
+    description: `La conceptualización de la soberanía alimentaria ha evolucionado significativamente desde su introducción por La Vía Campesina en 1996, siendo la Declaración de Nyéléni en Mali, 2007, uno de los enfoques más ampliamente reconocidos. Esta declaración enfatiza las redes de subsistencia y los sistemas locales, señalando que los conocimientos esenciales para la soberanía alimentaria residen principalmente en campesinos, pescadores, pastores y aquellos que cohabitan y trabajan en los bosques (Micarelli, 2018). En el contexto de la Amazonia, es indispensable el saber de las comunidades indígenas que habitan y se relacionan con esta región. Micarelli (2018) argumenta que, a pesar del reconocimiento de la importancia de que las comunidades ejerzan control sobre sus bienes comunes territoriales, las complejas interrelaciones entre la soberanía alimentaria, los bienes comunes y la soberanía territorial comunitaria permanecen en gran medida desatendidas. Es crucial atender a estas interacciones, pues son a través de ellas que las comunidades y movimientos sociales articulan su resistencia y reivindican su autonomía.  
 `,
     image: "/galery/4.2.jpg",
     alt: "",
@@ -127,7 +127,7 @@ Para responder a la situación actual se hace necesario pensar en estrategias de
     title: "SECCIÓN 1: ENTENDIENDO LA SOBERANÍA ALIMENTARIA ",
     subtitle:
       "2. Importancia de la soberanía alimentaria en el contexto amazónico",
-    description: `En el contexto de la Amazonía colombiana, la soberanía alimentaria adquiere un papel fundamental no solo en términos nutricionales, sino como esencial sostén de la identidad cultural y la sostenibilidad ambiental. Sistemas como las chagras no solo proporcionan una diversidad de alimentos esenciales para la dieta de estas comunidades, sino que además son cruciales para el mantenimiento del equilibrio ecológico y la promoción de la biodiversidad. Sin embargo, a pesar de estos ricos sistemas de subsistencia, la realidad amazónica enfrenta desafíos críticos.`,
+    description: `En el contexto de la Amazonia colombiana, la soberanía alimentaria adquiere un papel fundamental no solo en términos nutricionales, sino como esencial sostén de la identidad cultural y la sostenibilidad ambiental. Sistemas como las chagras no solo proporcionan una diversidad de alimentos esenciales para la dieta de estas comunidades, sino que además son cruciales para el mantenimiento del equilibrio ecológico y la promoción de la biodiversidad. Sin embargo, a pesar de estos ricos sistemas de subsistencia, la realidad amazónica enfrenta desafíos críticos.`,
     image: "/galery/4.4.jpg",
     alt: "",
   },
@@ -143,15 +143,15 @@ Para responder a la situación actual se hace necesario pensar en estrategias de
     title: "SECCIÓN 1: ENTENDIENDO LA SOBERANÍA ALIMENTARIA ",
     subtitle:
       "2. Importancia de la soberanía alimentaria en el contexto amazónico",
-    description: `De este modo, la soberanía alimentaria en la Amazonía se traduce en resiliencia, autonomía y una profunda consonancia con la naturaleza, elementos todos ellos indispensables para la preservación del patrimonio cultural y natural de la región. Sin embargo, esta situación ha llevado a las comunidades indígenas del Trapecio Amazónico a depender cada vez más de alimentos industriales y productos locales comercializados, reduciendo la producción destinada al autoconsumo. En este contexto crítico, es imperativo investigar y comprender los mecanismos que los habitantes indígenas de Leticia están desarrollando para lograr una soberanía alimentaria en un entorno urbano y cuáles son las estrategias que emplean para asegurar la abundancia de recursos (Ibid).`,
+    description: `De este modo, la soberanía alimentaria en la Amazonia se traduce en resiliencia, autonomía y una profunda consonancia con la naturaleza, elementos todos ellos indispensables para la preservación del patrimonio cultural y natural de la región. Sin embargo, esta situación ha llevado a las comunidades indígenas del Trapecio Amazónico a depender cada vez más de alimentos industriales y productos locales comercializados, reduciendo la producción destinada al autoconsumo. En este contexto crítico, es imperativo investigar y comprender los mecanismos que los habitantes indígenas de Leticia están desarrollando para lograr una soberanía alimentaria en un entorno urbano y cuáles son las estrategias que emplean para asegurar la abundancia de recursos (Ibid).`,
     image: "/galery/4.6.jpg",
     alt: "",
   },
   {
     title: "SECCIÓN 1: ENTENDIENDO LA SOBERANÍA ALIMENTARIA ",
     subtitle:
-      "3. Desafíos actuales para la soberanía alimentaria en la Amazonía",
-    description: `La Amazonía colombiana enfrenta múltiples desafíos que comprometen seriamente su soberanía alimentaria, afectada por una combinación de factores tanto externos como internos. El aumento de la población, la expansión urbana y la presión constante sobre los recursos naturales restringen la capacidad de las comunidades indígenas para mantener sus tradicionales sistemas de abastecimiento. Además, la deforestación y la degradación ambiental, impulsadas por actividades como la minería, la agricultura intensiva y la extracción indiscriminada de recursos, amenazan los ecosistemas de los que dependen estas prácticas de subsistencia.
+      "3. Desafíos actuales para la soberanía alimentaria en la Amazonia",
+    description: `La Amazonia colombiana enfrenta múltiples desafíos que comprometen seriamente su soberanía alimentaria, afectada por una combinación de factores tanto externos como internos. El aumento de la población, la expansión urbana y la presión constante sobre los recursos naturales restringen la capacidad de las comunidades indígenas para mantener sus tradicionales sistemas de abastecimiento. Además, la deforestación y la degradación ambiental, impulsadas por actividades como la minería, la agricultura intensiva y la extracción indiscriminada de recursos, amenazan los ecosistemas de los que dependen estas prácticas de subsistencia.
 
 Blanca Yagüe (2020) destaca que la región sur de la Amazonia colombiana se encuentra en un "nivel de vulnerabilidad alto respecto a la soberanía alimentaria". Las comunidades indígenas del Trapecio Amazónico se han vuelto altamente dependientes de los mercados, incrementando su consumo de alimentos industriales y reduciendo la producción para autoconsumo. Además, la Alcaldía de Leticia informa que el 66,3% de los habitantes del municipio se encuentra en situación de pobreza, lo que agrava aún más esta dependencia (Ibid).`,
     image: "/galery/4.7.jpg",
@@ -160,7 +160,7 @@ Blanca Yagüe (2020) destaca que la región sur de la Amazonia colombiana se enc
   {
     title: "SECCIÓN 1: ENTENDIENDO LA SOBERANÍA ALIMENTARIA ",
     subtitle:
-      "3. Desafíos actuales para la soberanía alimentaria en la Amazonía",
+      "3. Desafíos actuales para la soberanía alimentaria en la Amazonia",
     description: `Yagüe también menciona que la Gobernación del Amazonas reconoce que, aunque se mantiene en gran medida la cultura agrícola y gastronómica de la región, ha disminuido la frecuencia en la producción y preparación de alimentos tradicionales. Para la población indígena que migra a ciudades como Leticia, el dilema de qué comer se agudiza cuando el dinero se convierte en un factor crucial para acceder a los alimentos, especialmente para aquellos que provienen de resguardos donde tradicionalmente han sustentado a sus familias a través del trabajo en las chagras y el monte. En la ciudad, la dieta cambia significativamente hacia un consumo mayor de productos no locales e industriales.
     
 Yagüe también subraya que, en muchos resguardos, especialmente aquellos alejados de centros urbanos, aún prevalece una relativa autonomía alimentaria, que los indígenas amazónicos conceptualizan como "abundancia", un término local que se alinea estrechamente con el concepto global de soberanía alimentaria.`,
@@ -170,7 +170,7 @@ Yagüe también subraya que, en muchos resguardos, especialmente aquellos alejad
   {
     title: "SECCIÓN 1: ENTENDIENDO LA SOBERANÍA ALIMENTARIA ",
     subtitle:
-      "3. Desafíos actuales para la soberanía alimentaria en la Amazonía",
+      "3. Desafíos actuales para la soberanía alimentaria en la Amazonia",
     description: `El desafío se extiende a la globalización de los sistemas alimentarios y la penetración de mercados externos, que introducen alimentos procesados desplazando las dietas tradicionales. Las chagras empiezan a perder diversidad, reducir sus tamaños y los tiempos de reposo de los suelos a causa del crecimiento demográfico interno y las presiones de agentes externos, como el crecimiento urbano; situación que pone en riesgo la seguridad alimentaria de las familias indígenas (Fajardo-Cano et al., 2023). Esto no solo afecta la nutrición de las comunidades sino también su estructura social y cultural. Además, la calidad e inocuidad de los alimentos se ve comprometida por el acceso limitado a agua potable y por sistemas inadecuados de manejo de residuos. Según Yagüe (2013), la disposición final de residuos sólidos a menudo se realiza en vertederos a cielo abierto, lo que conlleva serios impactos ambientales y sociales.
     
 Estos desafíos requieren una búsqueda urgente de estrategias que fortalezcan las prácticas ancestrales y promuevan un manejo sostenible de los recursos, asegurando así el acceso a alimentos saludables y la preservación de la rica biodiversidad amazónica.`,
@@ -180,7 +180,7 @@ Estos desafíos requieren una búsqueda urgente de estrategias que fortalezcan l
   {
     title: "SECCIÓN 2: LAS CHAGRAS, UN SISTEMA TRADICIONAL DE CULTIVO",
     subtitle: "1. Historia y significado cultural de las chagras ",
-    description: `Las chagras, profundamente arraigadas en la cultura de las comunidades indígenas de la Amazonía, como los Tikunas, Huitoto Murui, Miraña y Boras, representan mucho más que sistemas de cultivo. Son consideradas entidades culturales sagradas donde convergen la cultura, la religión y la identidad de los pueblos. Estos sistemas agrícolas tradicionales constituyen la base de la subsistencia y son vitales para la seguridad alimentaria, además de ser parte esencial de la espiritualidad e identidad indígena (Fajardo-Cano et al., 2023).
+    description: `Las chagras, profundamente arraigadas en la cultura de las comunidades indígenas de la Amazonia, como los Tikunas, Huitoto Murui, Miraña y Boras, representan mucho más que sistemas de cultivo. Son consideradas entidades culturales sagradas donde convergen la cultura, la religión y la identidad de los pueblos. Estos sistemas agrícolas tradicionales constituyen la base de la subsistencia y son vitales para la seguridad alimentaria, además de ser parte esencial de la espiritualidad e identidad indígena (Fajardo-Cano et al., 2023).
 
 El sistema de roza-tumba y quema, conocido localmente como la chagra, es un método de policultivo itinerante y transitorio enfocado en la subsistencia, que implica una distribución de labores entre todos los miembros de la familia. Históricamente, las mujeres han jugado un rol crucial en la gestión de las chagras, encargándose de la siembra, la recolección, la preparación de alimentos y el cuidado de los niños, mientras que los hombres se encargan principalmente de la preparación del terreno, la tumba y la quema, aunque estas tareas no son exclusivas de cada sexo en la actualidad (Triana-Moreno et al., 2006). `,
     image: "/galery/5.1.jpg",
@@ -226,9 +226,9 @@ Además, las condiciones únicas de la Amazonia, combinadas con el conocimiento 
   {
     title: "SECCIÓN 2: LAS CHAGRAS, UN SISTEMA TRADICIONAL DE CULTIVO",
     subtitle: "3. Rol de las chagras en la conservación de la biodiversidad.",
-    description: `Las chagras juegan un rol crucial en la conservación de la biodiversidad en la Amazonía. Al integrar una amplia variedad de especies vegetales y animales en sus sistemas, estas parcelas actúan como refugios de biodiversidad, donde se protegen y propagan muchas especies nativas y endémicas. Esta riqueza biológica es vital para la salud del ecosistema en su conjunto, contribuyendo a la estabilidad ecológica y al mantenimiento de los servicios ambientales como la polinización, el control biológico de plagas y la regulación del clima local.
+    description: `Las chagras juegan un rol crucial en la conservación de la biodiversidad en la Amazonia. Al integrar una amplia variedad de especies vegetales y animales en sus sistemas, estas parcelas actúan como refugios de biodiversidad, donde se protegen y propagan muchas especies nativas y endémicas. Esta riqueza biológica es vital para la salud del ecosistema en su conjunto, contribuyendo a la estabilidad ecológica y al mantenimiento de los servicios ambientales como la polinización, el control biológico de plagas y la regulación del clima local.
 
-Además, las prácticas agrícolas en las chagras fomentan la interacción respetuosa con el medio ambiente, permitiendo que las comunidades indígenas actúen como guardianes de su entorno. En efecto, mediante el mantenimiento de estas prácticas culturales y agrícolas tradicionales, las comunidades indígenas de la Amazonía no solo aseguran su soberanía alimentaria sino que también contribuyen significativamente a la conservación global de uno de los biomas más importantes y amenazados del planeta.
+Además, las prácticas agrícolas en las chagras fomentan la interacción respetuosa con el medio ambiente, permitiendo que las comunidades indígenas actúen como guardianes de su entorno. En efecto, mediante el mantenimiento de estas prácticas culturales y agrícolas tradicionales, las comunidades indígenas de la Amazonia no solo aseguran su soberanía alimentaria sino que también contribuyen significativamente a la conservación global de uno de los biomas más importantes y amenazados del planeta.
     `,
     image: "/galery/5.6.jpg",
     alt: "",
@@ -237,7 +237,7 @@ Además, las prácticas agrícolas en las chagras fomentan la interacción respe
     title: "Sección 3: Las Chagras como Modelo de Soberanía Alimentaria",
     subtitle:
       "1. Descripción de cómo las chagras contribuyen a la soberanía alimentaria.",
-    description: `En el contexto de la globalización económica y los desafíos que esta plantea, las chagras emergen como fundamentales para la soberanía alimentaria de las comunidades indígenas de la Amazonía. Las chagras son sistemas agrícolas que no solo permiten la producción de alimentos sino también contribuyen a la conservación de la biodiversidad y el mantenimiento de la salud ecológica y cultural de las comunidades. Este enfoque territorial reconoce la coexistencia de múltiples territorialidades y la necesidad de que el poder político no se limite al estado-nación (Micarelli, 2018). 
+    description: `En el contexto de la globalización económica y los desafíos que esta plantea, las chagras emergen como fundamentales para la soberanía alimentaria de las comunidades indígenas de la Amazonia. Las chagras son sistemas agrícolas que no solo permiten la producción de alimentos sino también contribuyen a la conservación de la biodiversidad y el mantenimiento de la salud ecológica y cultural de las comunidades. Este enfoque territorial reconoce la coexistencia de múltiples territorialidades y la necesidad de que el poder político no se limite al estado-nación (Micarelli, 2018). 
     `,
     image: "/galery/6.0.jpg",
     alt: "",
@@ -480,7 +480,7 @@ Bebidas`,
       "Sección 4: Enfrentando Desafíos: Crisis Climáticas y Conflictos Sociales",
     subtitle:
       "1. Impacto de los cambios climáticos y conflictos sociales en la soberanía alimentaria",
-    description: `Las comunidades indígenas de la Amazonía tienen un conocimiento profundo de los fenómenos climáticos, incluido el cambio climático, a través de sus propias visiones y observaciones de elementos como lluvias, vientos, luminosidad, nubosidad, temperatura y rayos. Estos factores son esenciales para entender la dinámica de los ciclos anuales y estacionales del bosque, influyendo directamente en las prácticas agrícolas y de subsistencia (Rodríguez & Van der Hammen, 2014). Por ejemplo, el aumento de la temperatura diurna incide directamente en las chagras, los campos de cultivo y la vida de los animales en ríos y selvas.
+    description: `Las comunidades indígenas de la Amazonia tienen un conocimiento profundo de los fenómenos climáticos, incluido el cambio climático, a través de sus propias visiones y observaciones de elementos como lluvias, vientos, luminosidad, nubosidad, temperatura y rayos. Estos factores son esenciales para entender la dinámica de los ciclos anuales y estacionales del bosque, influyendo directamente en las prácticas agrícolas y de subsistencia (Rodríguez & Van der Hammen, 2014). Por ejemplo, el aumento de la temperatura diurna incide directamente en las chagras, los campos de cultivo y la vida de los animales en ríos y selvas.
     
 Adicionalmente a los desafíos ambientales, el crecimiento demográfico y la adopción de nuevas técnicas de producción y captura, como las mallas y motores para rallar yuca, están reduciendo las áreas disponibles para el cultivo. Esta situación, junto con la urbanización y el incremento de la demanda de pescado para exportación, ha incrementado la presión antropogénica sobre el medio ambiente, llevando a un empobrecimiento de los recursos disponibles (Camps et al., 2018).
     `,
@@ -662,7 +662,7 @@ Las instituciones académicas y de investigación también tienen un papel impor
     title: "Conclusión",
     subtitle: "",
     description: `
-A lo largo de esta cartilla, hemos explorado las múltiples dimensiones que afectan la soberanía alimentaria de las comunidades indígenas en la Amazonía, particularmente en Leticia. Hemos visto cómo el conocimiento agroecológico indígena es fundamental para el mantenimiento y revitalización de las chagras, sistemas agrícolas que son el núcleo de la producción alimentaria y cultural de estas comunidades. Las chagras no solo garantizan la producción de alimentos diversos y nutritivos, sino que también son espacios de enseñanza, crianza, y transmisión de conocimientos tradicionales.
+A lo largo de esta cartilla, hemos explorado las múltiples dimensiones que afectan la soberanía alimentaria de las comunidades indígenas en la Amazonia, particularmente en Leticia. Hemos visto cómo el conocimiento agroecológico indígena es fundamental para el mantenimiento y revitalización de las chagras, sistemas agrícolas que son el núcleo de la producción alimentaria y cultural de estas comunidades. Las chagras no solo garantizan la producción de alimentos diversos y nutritivos, sino que también son espacios de enseñanza, crianza, y transmisión de conocimientos tradicionales.
 
 Se ha destacado el impacto negativo que los cambios climáticos y los conflictos sociales tienen en la soberanía alimentaria. Las alteraciones en los patrones climáticos y las presiones antropogénicas afectan la productividad de las chagras y la estabilidad de las comunidades, poniendo en riesgo tanto su seguridad alimentaria como su patrimonio cultural.
     
@@ -687,7 +687,7 @@ Finalmente, la colaboración con agentes institucionales y del Estado, así como
     subtitle: "",
     description: `
 
-Es imperativo que tanto individuos como organizaciones externas reconozcan la importancia de las chagras y se comprometan a apoyar la soberanía alimentaria de las comunidades indígenas en la Amazonía. Aquí hay algunas maneras en que podemos contribuir:
+Es imperativo que tanto individuos como organizaciones externas reconozcan la importancia de las chagras y se comprometan a apoyar la soberanía alimentaria de las comunidades indígenas en la Amazonia. Aquí hay algunas maneras en que podemos contribuir:
 
 • Apoyar Políticas Públicas: Promover y respaldar políticas locales y nacionales que protejan las tierras indígenas, aseguren los derechos de los pueblos a sus territorios y fomenten prácticas agrícolas sostenibles.
 

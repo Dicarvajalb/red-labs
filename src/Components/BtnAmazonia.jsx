@@ -12,7 +12,7 @@ export default function BtnAmazonia({ url, className }) {
         }
         <p className="w-auto m-4 me-[25%] ">
           Seguridad y soberanía alimentaria
-          <b> Amazonía</b>
+          <b> Amazonia</b>
         </p>
       </div>
       <Image
