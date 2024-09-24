@@ -1,11 +1,9 @@
 "use client";
 
-import BtnIcons from "@/Components/BtnIcons";
-import { useEffect, useState } from "react";
-import Note from "@/Components/Note";
 import Menu from "@/Components/Menu";
-import Image from "next/image";
 import { baseURL } from "@/variables/env";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const data = {
   lab101: {
@@ -257,7 +255,7 @@ iv) Migración venezolana y manejo de la frontera: Revisión del escenario de mi
   },
 };
 
-const Layout = ({ params }) => {
+const Lab = ({ name }) => {
   const [Loaded, setLoaded] = useState(false);
   const [selected, setSelected] = useState(undefined);
 
@@ -266,10 +264,10 @@ const Layout = ({ params }) => {
   }, []);
 
   useEffect(() => {
-    if (params) {
-      setSelected(data[params.name]);
+    if (name) {
+      setSelected(data[name]);
     }
-  }, [params.name]);
+  }, [name]);
 
   return (
     <div className="overflow-hidden  w-[100vw] min-h-[100vh] relative bg-lightPurple">
@@ -375,4 +373,4 @@ const Layout = ({ params }) => {
   );
 };
 
-export default Layout;
+export default Lab;

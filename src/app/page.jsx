@@ -147,6 +147,8 @@ export function initialAnim() {
   gsap.set(".amazonia_svg", { x: 0 });
 }
 
+export const metadata = { title: "hola" }
+
 export default function Home() {
   const amazonasRef = useRef();
   const noInteractiveRef = useRef();

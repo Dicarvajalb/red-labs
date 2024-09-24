@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
   <Script strategy="beforeInteractive" src={baseURL+"/js/accesibilidad.js"} type="text/javascript"></Script>
   <Script strategy="beforeInteractive" src={baseURL+"/js/bootstrap.bundle.min.js"} type="text/javascript"></Script>
 
-  <title>Inicio: Universidad Nacional de Colombia</title>
+  <title>RED DE LABORATORIOS TECNOLOGÍAS PARA LA PAZ</title>
 </head>
 
 <body>
