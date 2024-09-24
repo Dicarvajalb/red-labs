@@ -17,23 +17,27 @@ export function moveMarker() {
   console.log("[target pos amazonas]", targetPos, selfPos);
 
   var tMoveMarker = gsap.timeline();
-  console.log("top "+targetPos.top,
-    "yScroll "+window.scrollY ,
-    "self height "+selfPos.height ,
-    "target h "+targetPos.height, selfPos)
-    // transformOrigin: "100% 50%"
+  console.log(
+    "top " + targetPos.top,
+    "yScroll " + window.scrollY,
+    "self height " + selfPos.height,
+    "target h " + targetPos.height,
+    selfPos
+  );
+  // transformOrigin: "100% 50%"
   if (targetPos && selfPos) {
     tMoveMarker.add(
-      gsap.to(".btn__amazonia", {scale: 1, opacity: 1, duration: 0 }),
+      gsap.to(".btn__amazonia", { scale: 1, opacity: 1, duration: 0 }),
       0
     );
     tMoveMarker.add(
       gsap.to(".btn__amazonia", {
         top:
           targetPos.top +
-          window.scrollY - selfPos.height + (targetPos.height/2),
-          
-          
+          window.scrollY -
+          selfPos.height +
+          targetPos.height / 2,
+
         duration: 0,
       }),
       0
@@ -65,7 +69,7 @@ export function moveMarker() {
     */
     tMoveMarker.add(
       gsap.to(".btn__amazonia", {
-        left: targetPos.left + targetPos.width/2 - selfPos.width/2,
+        left: targetPos.left + targetPos.width / 2 - selfPos.width / 2,
         duration: 0,
       }),
       0
@@ -75,10 +79,15 @@ export function moveMarker() {
     .getElementsByClassName("cesar_svg")[0]
     .getClientRects()[0];
 
-    console.log("[target pos amazonas]", targetPos, selfPos);
+  console.log("[target pos amazonas]", targetPos, selfPos);
   if (targetPos && selfPos) {
     tMoveMarker.add(
-      gsap.to(".btn__lapaz", { transformOrigin: "100% 50%", scale: 1, opacity: 1, duration: 0 }),
+      gsap.to(".btn__lapaz", {
+        transformOrigin: "100% 50%",
+        scale: 1,
+        opacity: 1,
+        duration: 0,
+      }),
       0
     );
     tMoveMarker.add(
@@ -142,12 +151,16 @@ export function initialState() {
 }
 
 export function initialAnim() {
-  gsap.set([".btn__amazonia", ".btn__lapaz"], { scale: 1, duration: 0, opacity: 0, top: 0, left:0 });
-  
+  gsap.set([".btn__amazonia", ".btn__lapaz"], {
+    scale: 1,
+    duration: 0,
+    opacity: 0,
+    top: 0,
+    left: 0,
+  });
+
   gsap.set(".amazonia_svg", { x: 0 });
 }
-
-export const metadata = { title: "hola" }
 
 export default function Home() {
   const amazonasRef = useRef();
@@ -169,26 +182,24 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener("resize", moveMarker);
-    window.addEventListener("open",() => setTimeout(() => {
-      
-      initialState();
-      
-      }, 0));
+    window.addEventListener("open", () =>
+      setTimeout(() => {
+        initialState();
+      }, 0)
+    );
     window.addEventListener("resize", moveDecoration);
-    initialAnim()
+    initialAnim();
     setTimeout(() => {
-      
       initialState();
-      
-      }, 200);
+    }, 200);
     return () => {
       window.removeEventListener("resize", moveMarker);
       window.removeEventListener("resize", moveDecoration);
-    } 
+    };
   }, []);
-  const btnAmazonasRef = useRef()
+  const btnAmazonasRef = useRef();
   useEffect(() => {
-    if(btnAmazonasRef.current){
+    if (btnAmazonasRef.current) {
       //btnAmazonasRef.current.style = `top:${}`
     }
   }, [btnAmazonasRef.current]);
@@ -210,7 +221,6 @@ export default function Home() {
           <h3 className="mx-auto w-fit">TECNOLOGÍAS PARA LA PAZ</h3>
         </div>
       </GlobalLayout>
-      
 
       <Image
         alt="decoración de mapa"
